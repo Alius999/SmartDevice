@@ -1,3 +1,21 @@
+// Шрифты
+
+$common-font: "PT Mono";
+$header-font: "Roboto Condensed";
+$reserve: "Arial";
+$secondary-slogan: "Roboto";
+
+// Переменные
+
+$text-color: #041827;
+$text-white: #ffffff;
+$main-blue: #00b2ff;
+$goods-bg: #041827;
+$black-btn: #041427;
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
 // Vendor
 // ---------------------------------
 
@@ -20,6 +38,21 @@
 
 @import "blocks/btn";
 @import "blocks/modal";
+@import "blocks/header";
+@import "blocks/page";
+@import "blocks/user-navigation";
+@import "blocks/first-screen";
+@import "blocks/features";
+@import "blocks/about";
+@import "blocks/goods";
+@import "blocks/feedback";
+@import "blocks/footer-logo";
+@import "blocks/footer";
+@import "blocks/socials";
+@import "blocks/footer-menu";
+@import "blocks/footer-contacts";
+@import "blocks/feedback-form";
+@import "blocks/modal-form";
 
 // ---------------------------------
 

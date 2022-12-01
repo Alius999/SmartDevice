@@ -74,6 +74,43 @@
   }
 }
 
+// Глобальные миксины
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin header-font-bold {
+  font-family: $header-font, $reserve, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin header-font-regular {
+  font-family: $header-font, $reserve, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin common-font-bold {
+  font-family: $common-font, $reserve, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin common-font-regular {
+  font-family: $common-font, $reserve, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin secondary-slogan {
+  font-family: $secondary-slogan, $reserve, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
 // Mobile first
 
 // @mixin vp-375 {

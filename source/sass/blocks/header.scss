@@ -1,0 +1,106 @@
+.header {
+    position: relative;
+    z-index: 1;
+    min-width: 320px;
+    min-height: 70px;
+    margin: 0;
+    padding: 15px 26px 20px;
+    background: linear-gradient(180deg, $text-color 84.9%, rgba(4, 24, 39, 0) 100%);
+
+    @media (min-width: $tablet-width) {
+        padding: 20px 58px 25px 50px;
+        min-width: 768px;
+        min-height: 100px;
+    }
+
+    @media (min-width: $desktop-width) {
+        min-height: 1024px;
+        // width: 100%;
+        min-height: 120px;
+        // padding: 30px 410px 35px 350px;
+        padding: 30px 20px 35px;
+        // box-sizing: border-box;
+    }
+}
+
+.header__container {
+    display: grid;
+    grid-template-columns: 3fr 1.8fr;
+
+    @media (min-width: $tablet-width) {
+        // grid-template-columns: 3fr 1.6fr;
+        grid-template-columns: 55px 4fr 100px;
+    }
+
+    @media (min-width: $desktop-width) {
+        grid-template-columns: 55px 1.01fr 1.65fr 1fr;
+        max-width: 1220px;
+        margin: 0 auto;
+        // box-sizing: border-box;
+    }
+}
+
+.header__logo {
+    @media (min-width: $tablet-width) {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+.header__slogan {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+        margin: 5px 0 0 15px;
+        display: block;
+    }
+}
+
+.header__slogan-name {
+
+    @media (min-width: $tablet-width) {
+        @include header-font-bold;
+        font-size: 25px;
+        line-height: 29px;
+        letter-spacing: 0;
+        text-align: left;
+        color: $text-white;
+    }
+}
+
+.header__slogan-text {
+    @media (min-width: $tablet-width) {
+        @include secondary-slogan;
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 500;
+        letter-spacing: 0;
+        text-align: left;
+        color: rgba(255, 255, 255, 0.7);
+        margin: 0;
+    }
+}
+
+.header__calback {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+        display: block;
+        width: 160px;
+        height: 40px;
+        border-radius: 3px;
+        border: 1px solid #f2f5f6;
+        background: transparent;
+        @include header-font-bold;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: $text-white;
+        text-transform: uppercase;
+        box-sizing: border-box;
+        justify-self: center;
+        align-self: center;
+        margin: -5px 0 0 35px;
+    }
+}
