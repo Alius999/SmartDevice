@@ -70,25 +70,11 @@
     }
 }
 
-// .goods__item {
-//     position: relative;
-//     padding: 30px;
-//     min-height: 250px;
-
-//     @media (min-width: $desktop-width) {
-//         width: 350px;
-//         min-height: 650px;
-//         padding: 50px 40px;
-//     }
-// }
-
 .goods__item-link {
     display: block;
     position: relative;
     padding: 25px 30px;
     min-height: 250px;
-    // width: 100%;
-    // min-height: 250px;
 
     @media (min-width: $tablet-width) {
         padding: 37px 44px;

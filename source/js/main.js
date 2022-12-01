@@ -224,11 +224,9 @@ if(window.matchMedia('(min-width: 768px)').matches) {
     aboutText.classList.toggle('about__click');
     if (aboutText.classList.contains('about__click')) {
       textAfterDivider.style.display = 'inline';
-      // textAfterDividerMobile.style.display = 'inline';
       aboutButton.textContent = 'Свернуть';
     } else if (!aboutText.classList.contains('about__click')) {
       textAfterDivider.style.display = 'none';
-      // textAfterDividerMobile.style.display = 'none';
       aboutButton.textContent = 'Подробнее';
     }
   });
@@ -252,22 +250,3 @@ modalWindow.addEventListener('click', (e) => {
 		modalWindow.style.display = 'none'; // скрываем элемент т к клик был за его пределами
 	}
 });
-
-// Pristine Validation
-
-// const pristine = new Pristine(feedbackForm, {
-//   classTo: 'feedback__element',
-//   errorTextParent: 'feedback__element',
-//   errorTextTag: 'span',
-//   errorTextClass: 'feedback__element--error-text',
-// }, false);
-
-// pristine.addValidator(feedbackName, () => {
-//   if (!feedbackName == '')
-//   {
-//     return true;
-//   } else {
-//     return false;
-//   }
-
-// }, 'Количество комнат должно быть больше или равно количеству гостей. 100 комнат только "НЕ для гостей"');

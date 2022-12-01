@@ -41,15 +41,10 @@
     }
 }
 
-// .footer-contacts__accordeon-minus {
-//     display: none;
-// }
-
 .footer-contacts__list {
     @include reset;
     list-style-type: none;
     margin: 0 25px 12px;
-    // display: none;
 
     @media (min-width: $tablet-width) {
         width: 310px;

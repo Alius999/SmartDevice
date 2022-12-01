@@ -15,11 +15,8 @@
 
     @media (min-width: $desktop-width) {
         min-height: 1024px;
-        // width: 100%;
         min-height: 120px;
-        // padding: 30px 410px 35px 350px;
         padding: 30px 20px 35px;
-        // box-sizing: border-box;
     }
 }
 
@@ -28,7 +25,6 @@
     grid-template-columns: 3fr 1.8fr;
 
     @media (min-width: $tablet-width) {
-        // grid-template-columns: 3fr 1.6fr;
         grid-template-columns: 55px 4fr 100px;
     }
 
@@ -36,7 +32,6 @@
         grid-template-columns: 55px 1.01fr 1.65fr 1fr;
         max-width: 1220px;
         margin: 0 auto;
-        // box-sizing: border-box;
     }
 }
 
