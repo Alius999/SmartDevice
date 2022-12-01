@@ -1,122 +1,141 @@
 .first-screen {
-    display: grid;
-    justify-content: center;
-    min-width: 320px;
-    padding: 150px 25px 190px;
-    position: relative;
-    margin-top: -70px;
-    min-height: 560px;
-    background: url(../img/first-screen-bg.png) no-repeat;
+  display: grid;
+  justify-content: center;
+  min-width: 320px;
+  padding: 150px 25px 190px;
+  position: relative;
+  margin-top: -70px;
+  min-height: 560px;
+  background: url("../img/first-screen-bg.png") no-repeat;
+  background-size: cover;
+  background-color: $substrate;
+
+  @media (max-width: $tablet-width) {
+    @media (min-resolution: 2dppx) {
+      background: url("../img/first-screen-bg@2x.png") no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: -100px;
+    padding: 180px 50px 205px;
+    background: url("../img/first-screen-bg-tablet.png") no-repeat;
     background-size: cover;
 
-    @media (min-width: $tablet-width) {
-        margin-top: -100px;
-        padding: 180px 50px 205px;
-        background: url(../img/first-screen-bg-tablet.png) no-repeat;
-        background-size: cover;
+    @media (min-resolution: 2dppx) {
+      background: url("../img/first-screen-bg-tablet@2x.png") no-repeat;
+      background-size: cover;
     }
+  }
 
-    @media (min-width: $desktop-width) {
-        min-height: 880px;
-        margin-top: -120px;
-        padding: 305px 50px 180px;
-        background: url(../img/first-screen-bg-desktop.png) no-repeat;
-        background-size: cover;
+  @media (min-width: $desktop-width) {
+    min-height: 880px;
+    margin-top: -120px;
+    padding: 305px 50px 180px;
+    background: url("../img/first-screen-bg-desktop.png") no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/first-screen-bg-desktop@2x.png") no-repeat;
+      background-size: cover;
     }
+  }
 }
 
 .first-screen__container {
-    @media (min-width: $desktop-width) {
-        margin-left: -255px;
-    }
+  @media (min-width: $desktop-width) {
+    margin-left: -255px;
+  }
 }
 
 .first-screen__container-header {
-    @include header-font-bold;
-    margin: 0;
-    display: block;
-    font-size: 36px;
-    line-height: 42px;
-    letter-spacing: 0.07em;
-    text-align: left;
-    color: $text-white;
+  @include header-font-bold;
+  margin: 0;
+  display: block;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.07em;
+  text-align: left;
+  color: $text-white;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 64px;
+    line-height: 75px;
     text-transform: uppercase;
+  }
 
-    @media (min-width: $tablet-width) {
-        font-size: 64px;
-        line-height: 75px;
-        text-transform: uppercase;
-    }
-
-    @media (min-width: $desktop-width) {
-        font-size: 80px;
-        line-height: 94px;
-        text-transform: uppercase;
-    }
+  @media (min-width: $desktop-width) {
+    font-size: 80px;
+    line-height: 94px;
+    text-transform: uppercase;
+  }
 }
 
 .first-screen__container-text {
-    @include common-font-regular;
-    margin: 8px 0 45px;
-    font-size: 14px;
-    line-height: 22px;
-    letter-spacing: 0;
-    text-align: left;
-    color: $text-white;
+  @include common-font-regular;
+  margin: 8px 0 45px;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0;
+  text-align: left;
+  color: $text-white;
 
-    @media (min-width: $tablet-width) {
-        margin: 0 0 57px;
-        font-size: 22px;
-        line-height: 34px;
-    }
+  @media (min-width: $tablet-width) {
+    margin: 0 0 57px;
+    font-size: 22px;
+    line-height: 34px;
+  }
 
-    @media (min-width: $desktop-width) {
-        display: block;
-        width: 650px;
-        margin: 30px 0 48px;
-    }
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 650px;
+    margin: 30px 0 48px;
+  }
 }
 
 .first-screen__container-button {
-    display: grid;
-    align-items: center;
-    min-height: 40px;
-    width: 270px;
-    border-radius: 3px;
-    background: $main-blue;
-    outline: none;
-    border: none;
-    @include header-font-bold;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.05em;
-    text-align: center;
-    text-transform: uppercase;
-    color: $text-white;
+  @include header-font-bold;
 
-    @media (min-width: $tablet-width) {
-        min-height: 55px;
-        width: 410px;
-        font-size: 18px;
-        line-height: 21px;
-        margin-left: 45px;
-    }
+  display: grid;
+  align-items: center;
+  min-height: 40px;
+  width: 270px;
+  border-radius: 3px;
+  background: $main-blue;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+  color: $text-white;
 
-    @media (min-width: $desktop-width) {
-        margin-left: 0;
-    }
+  @media (min-width: $tablet-width) {
+    min-height: 55px;
+    width: 410px;
+    font-size: 18px;
+    line-height: 21px;
+    margin-left: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
 }
 
 .first-screen__button-text--mobile {
-    @media (min-width: $tablet-width) {
-        display: none;
-    }
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .first-screen__button-text--tablet {
-    display: none;
+  display: none;
 
-    @media (min-width: $tablet-width) {
-        display: block;
-    }
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

@@ -818,6 +818,8 @@ button,
 }
 
 .user-navigation {
+  margin: 0;
+  padding: 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 0.7fr;
@@ -826,8 +828,6 @@ button,
   -ms-flex-align: center;
   align-items: center;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   margin-bottom: 3px;
 }
 
@@ -846,8 +846,9 @@ button,
   position: relative;
   margin-top: -70px;
   min-height: 560px;
-  background: url(../img/first-screen-bg.png) no-repeat;
+  background: url("../img/first-screen-bg.png") no-repeat;
   background-size: cover;
+  background-color: #192024;
 }
 
 .first-screen__container-header {
@@ -877,6 +878,9 @@ button,
 }
 
 .first-screen__container-button {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-style: normal;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
@@ -888,9 +892,6 @@ button,
   background: #00b2ff;
   outline: none;
   border: none;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 700;
-  font-style: normal;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.05em;
@@ -974,10 +975,10 @@ button,
 }
 
 .features__item-header {
-  margin: 12px 0 10px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
+  margin: 12px 0 10px;
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 0;
@@ -995,14 +996,13 @@ button,
 }
 
 .features__item-text {
-  margin: 0 0 15px;
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
+  margin: 0 0 15px;
   font-size: 14px;
   line-height: 19px;
   letter-spacing: 0;
-  text-align: left;
   text-align: left;
   color: #041827;
 }
@@ -1047,10 +1047,10 @@ button,
 
 .about__text--after-divider,
 .about__text--after-divider-mobile {
-  display: none;
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
+  display: none;
   font-size: 14px;
   line-height: 19px;
   letter-spacing: 0;
@@ -1060,14 +1060,14 @@ button,
 }
 
 .about__button {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-style: normal;
   min-height: 35px;
   width: 160px;
   background: #ffffff;
   border-radius: 3px;
   border: 1px solid #00b2ff;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 700;
-  font-style: normal;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.05em;
@@ -1076,6 +1076,7 @@ button,
   color: #00b2ff;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .about__click {
@@ -1133,18 +1134,20 @@ button,
 }
 
 .goods__item--first {
-  background: url(../img/first-card-bg.png) no-repeat;
+  background: url("../img/first-card-bg.png") no-repeat;
   background-size: cover;
 }
 
 .goods__item--second {
-  background: url(../img/second-card-bg.png) no-repeat;
+  background: url("../img/second-card-bg.png") no-repeat;
   background-size: cover;
+  background-color: #192024;
 }
 
 .goods__item--third {
-  background: url(../img/third-card-bg.png) no-repeat;
+  background: url("../img/third-card-bg.png") no-repeat;
   background-size: cover;
+  background-color: #192024;
 }
 
 .goods__content {
@@ -1211,13 +1214,13 @@ button,
 }
 
 .footer-logo__logo-name {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-style: normal;
   margin: 5px 0 0;
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: end;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 700;
-  font-style: normal;
   font-size: 25px;
   line-height: 29px;
   letter-spacing: 0;
@@ -1331,10 +1334,11 @@ button,
   margin: 0 25px 20px;
 }
 
-.footer-menu__item {
+.footer-menu__link {
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
+  text-decoration: none;
   font-size: 14px;
   line-height: 19px;
   letter-spacing: 0;
@@ -1343,7 +1347,7 @@ button,
 }
 
 .footer-menu__item:not(:last-of-type) {
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
 .footer-menu__no-display {
@@ -1431,10 +1435,10 @@ button,
 }
 
 .feedback-form__header {
-  display: block;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
+  display: block;
   font-size: 30px;
   line-height: 42px;
   letter-spacing: 0;
@@ -1456,6 +1460,9 @@ button,
 }
 
 .feedback-form__input {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   display: block;
   height: 50px;
   width: 100%;
@@ -1467,9 +1474,6 @@ button,
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 15px 13px;
-  font-family: "PT Mono", "Arial", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 0;
@@ -1533,6 +1537,9 @@ button,
 }
 
 .feedback-form__question {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   height: 180px;
   width: 100%;
   border-radius: 3px;
@@ -1543,9 +1550,6 @@ button,
   box-sizing: border-box;
   margin-bottom: 23px;
   padding: 20px 12px;
-  font-family: "PT Mono", "Arial", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 0;
@@ -1609,20 +1613,21 @@ button,
 }
 
 .feedback-form__button {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-style: normal;
   height: 45px;
   width: 100%;
   border-radius: 3px;
   background: #041427;
   border: 0;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 700;
-  font-style: normal;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.05em;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .feedback-form__agreement-wrapper {
@@ -1685,7 +1690,7 @@ button,
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
-  background: url(../img/svg/checkmark.svg) no-repeat 50% 50%;
+  background: url("../img/svg/checkmark.svg") no-repeat 50% 50%;
   width: 15px;
   height: 14px;
   -ms-grid-column-align: center;
@@ -1715,10 +1720,10 @@ button,
 }
 
 .modal-form__header {
-  display: block;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
+  display: block;
   font-size: 30px;
   line-height: 42px;
   letter-spacing: 0;
@@ -1728,11 +1733,11 @@ button,
 }
 
 .modal-form__secondary-header {
-  display: block;
-  max-width: 400px;
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
+  display: block;
+  max-width: 400px;
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 0;
@@ -1742,6 +1747,9 @@ button,
 }
 
 .modal-form__input {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   display: block;
   height: 50px;
   width: 100%;
@@ -1753,9 +1761,6 @@ button,
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 15px 13px;
-  font-family: "PT Mono", "Arial", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 0;
@@ -1819,6 +1824,9 @@ button,
 }
 
 .modal-form__question {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   height: 155px;
   width: 100%;
   border-radius: 3px;
@@ -1829,9 +1837,6 @@ button,
   box-sizing: border-box;
   margin-bottom: 25px;
   padding: 25px 15px;
-  font-family: "PT Mono", "Arial", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 0;
@@ -1895,14 +1900,14 @@ button,
 }
 
 .modal-form__button {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-style: normal;
   height: 45px;
   width: 100%;
   border-radius: 3px;
   background: #041427;
   border: 0;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 700;
-  font-style: normal;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.05em;
@@ -1974,7 +1979,7 @@ button,
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
-  background: url(../img/svg/checkmark.svg) no-repeat 50% 50%;
+  background: url("../img/svg/checkmark.svg") no-repeat 50% 50%;
   width: 15px;
   height: 14px;
   -ms-grid-column-align: center;
@@ -2084,7 +2089,7 @@ button,
   .first-screen {
     margin-top: -100px;
     padding: 180px 50px 205px;
-    background: url(../img/first-screen-bg-tablet.png) no-repeat;
+    background: url("../img/first-screen-bg-tablet.png") no-repeat;
     background-size: cover;
   }
 
@@ -2241,17 +2246,17 @@ button,
   }
 
   .goods__item--first {
-    background: url(../img/first-card-bg-tablet.png) no-repeat;
+    background: url("../img/first-card-bg-tablet.png") no-repeat;
     background-size: cover;
   }
 
   .goods__item--second {
-    background: url(../img/second-card-bg-tablet.png) no-repeat;
+    background: url("../img/second-card-bg-tablet.png") no-repeat;
     background-size: cover;
   }
 
   .goods__item--third {
-    background: url(../img/third-card-bg-tablet.png) no-repeat;
+    background: url("../img/third-card-bg-tablet.png") no-repeat;
     background-size: cover;
   }
 
@@ -2334,7 +2339,7 @@ button,
     width: 220px;
   }
 
-  .footer-menu__item {
+  .footer-menu__link {
     font-size: 16px;
     line-height: 22px;
   }
@@ -2415,7 +2420,7 @@ button,
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1/3;
-    padding: 25px 12px;
+    padding: 30px 15px;
   }
 
   .feedback-form__button {
@@ -2434,9 +2439,30 @@ button,
   }
 }
 
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 768px) and (min-resolution: 2dppx) {
+  .first-screen {
+    background: url("../img/first-screen-bg-tablet@2x.png") no-repeat;
+    background-size: cover;
+  }
+
+  .goods__item--first {
+    background: url("../img/first-card-bg-tablet@2x.png") no-repeat;
+    background-size: cover;
+  }
+
+  .goods__item--second {
+    background: url("../img/second-card-bg-tablet@2x.png") no-repeat;
+    background-size: cover;
+  }
+
+  .goods__item--third {
+    background: url("../img/third-card-bg-tablet@2x.png") no-repeat;
+    background-size: cover;
+  }
+}
+
 @media (min-width: 1024px) {
   .header {
-    min-height: 1024px;
     min-height: 120px;
     padding: 30px 20px 35px;
   }
@@ -2449,15 +2475,15 @@ button,
   }
 
   .header__calback {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: 700;
+    font-style: normal;
     display: block;
     width: 160px;
     height: 40px;
     border-radius: 3px;
     border: 1px solid #f2f5f6;
     background: transparent;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-weight: 700;
-    font-style: normal;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.05em;
@@ -2472,6 +2498,7 @@ button,
     -ms-grid-row-align: center;
     align-self: center;
     margin: -5px 0 0 35px;
+    cursor: pointer;
   }
 
   .user-navigation {
@@ -2487,10 +2514,10 @@ button,
   }
 
   .user-navigation__item-text {
-    display: block;
     font-family: "PT Mono", "Arial", sans-serif;
     font-weight: 400;
     font-style: normal;
+    display: block;
     font-size: 16px;
     line-height: 18px;
     letter-spacing: 0;
@@ -2503,7 +2530,7 @@ button,
     min-height: 880px;
     margin-top: -120px;
     padding: 305px 50px 180px;
-    background: url(../img/first-screen-bg-desktop.png) no-repeat;
+    background: url("../img/first-screen-bg-desktop.png") no-repeat;
     background-size: cover;
   }
 
@@ -2619,12 +2646,12 @@ button,
   }
 
   .goods__item--first {
-    background: url(../img/first-card-bg-desktop.png) no-repeat;
+    background: url("../img/first-card-bg-desktop.png") no-repeat;
     background-size: cover;
   }
 
   .goods__item--second {
-    background: url(../img/second-card-bg-desktop.png) no-repeat;
+    background: url("../img/second-card-bg-desktop.png") no-repeat;
     background-size: cover;
   }
 
@@ -2633,7 +2660,7 @@ button,
   }
 
   .goods__item--third {
-    background: url(../img/third-card-bg-desktop.png) no-repeat;
+    background: url("../img/third-card-bg-desktop.png") no-repeat;
     background-size: cover;
   }
 
@@ -2753,11 +2780,34 @@ button,
   }
 
   .feedback-form__question {
+    padding: 25px 12px;
     width: 100%;
   }
 
   .feedback-form__agreement-wrapper {
     margin: 15px 0 0 10px;
+  }
+}
+
+@media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1024px) and (min-resolution: 2dppx) {
+  .first-screen {
+    background: url("../img/first-screen-bg-desktop@2x.png") no-repeat;
+    background-size: cover;
+  }
+
+  .goods__item--first {
+    background: url("../img/first-card-bg-desktop@2x.png") no-repeat;
+    background-size: cover;
+  }
+
+  .goods__item--second {
+    background: url("../img/second-card-bg-desktop@2x.png") no-repeat;
+    background-size: cover;
+  }
+
+  .goods__item--third {
+    background: url("../img/third-card-bg-desktop@2x.png") no-repeat;
+    background-size: cover;
   }
 }
 
@@ -2770,6 +2820,28 @@ button,
 @media (max-width: 1023px) {
   .container {
     padding: 0 24px;
+  }
+}
+
+@media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 768px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 768px) and (min-resolution: 2dppx) {
+  .first-screen {
+    background: url("../img/first-screen-bg@2x.png") no-repeat;
+    background-size: cover;
+  }
+
+  .goods__item--first {
+    background: url("../img/first-card-bg@2x.png") no-repeat;
+    background-size: cover;
+  }
+
+  .goods__item--second {
+    background: url("../img/second-card-bg@2x.png") no-repeat;
+    background-size: cover;
+  }
+
+  .goods__item--third {
+    background: url("../img/third-card-bg@2x.png") no-repeat;
+    background-size: cover;
   }
 }
 

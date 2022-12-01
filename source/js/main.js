@@ -69,9 +69,6 @@ const modalWindow = document.querySelector('.modal-form');
 const headerCallBack = document.querySelector('.header__calback');
 const modalWrapper = document.querySelector('.modal-form__wrapper');
 
-const feedbackForm = document.querySelector('.feedback-form');
-const feedbackName = document.querySelector('.feedback-form__name');
-
 // Без JS
 
 footerList.classList.remove('footer-menu__list--no-js');
@@ -245,8 +242,8 @@ closeModal.addEventListener('click', () => {
 
 modalWindow.addEventListener('click', (e) => {
   const withinBoundaries = e.composedPath().includes(modalWrapper);
- 
+
 	if ( ! withinBoundaries ) {
-		modalWindow.style.display = 'none'; // скрываем элемент т к клик был за его пределами
+		modalWindow.style.display = 'none'; // Cкрываем элемент т.к. клик был за его пределами
 	}
 });

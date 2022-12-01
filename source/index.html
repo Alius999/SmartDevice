@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="SmartDevice">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico"> <!-- 32 x 32 -->
@@ -15,11 +15,13 @@
     <link rel="preload" href="fonts/Roboto-500.woff2" as="font">
     <title>SmartDevice</title>
   </head>
-  <body class="page__body">
+  <body>
     <div class="page__wrapper">
       <header class="header">
           <div class="header__container">
-            <img src="/img/svg/logo.svg" alt="Smart Device" width="35" height="35" class="header__logo">
+            <a href="index.html" class="header__logo-link">
+             <img src="/img/svg/logo.svg" alt="Smart Device" width="35" height="35" class="header__logo">
+            </a>
             <div class="header__slogan">
               <span class="header__slogan-name">Smart Device</span>
               <p class="header__slogan-text">умные технологии</p>
@@ -108,10 +110,10 @@
           </ul>
         </section>
         <section class="about">
-          <h2 class="visually-hidden">О компании</h1>
+          <h2 class="visually-hidden">О компании</h2>
           <div class="about__container-wrapper">
             <div class="about__container">
-              <img src="../img/about-company-year.png" alt="Год основания" width="150" height="320" class="about__img">
+              <img src="../img/about-company-year.png" srcset="../img/about-company-year@2x.png 2x" alt="Год основания" width="150" height="320" class="about__img">
               <div class="about__text-container">
                 <span class="about__header">O компании</span>
                 <p class="about__text">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
@@ -124,7 +126,7 @@
               </div>
               <button class="about__button">Подробнее</button>
             </div>
-          </div>  
+          </div>
         </section>
         <section class="goods">
           <h2 class="visually-hidden">Smart Device предлагает следующие товары и услуги</h2>
@@ -140,18 +142,19 @@
               </a>
             </li>
             <li class="goods__item goods__item--second">
-              <a class="goods__item-link" href="#">              
+              <a class="goods__item-link" href="#">
                 <p class="goods__content">Монтаж<br> печатных плат</p>
-                <button class="goods__button">
+                <span class="goods__button">
                   <img src="../img/svg/arrow.svg" alt="Подробнее" width="6" height="4" class="goods__arrow-icon">
-                </button></a>
+                </span>
+              </a>
             </li>
             <li class="goods__item goods__item--third">
-              <a class="goods__item-link" href="#"> 
+              <a class="goods__item-link" href="#">
                 <p class="goods__content">Комплектующие<br> для светотехники</p>
-                <button class="goods__button">
+                <span class="goods__button">
                   <img src="../img/svg/arrow.svg" alt="Подробнее" width="6" height="4" class="goods__arrow-icon">
-                </button>
+                </span>
               </a>
             </li>
           </ul>
@@ -160,12 +163,12 @@
           <h2 class="visually-hidden">Контакты Smart Device</h2>
           <div class="feedback__container" id="feedback__container">
             <img src="../img/svg/airplane.svg" alt="Обратная связь" width="510" height="285" class="feedback__airplane">
-            <form action="" class="feedback-form" id="feedback-form">
+            <form action="https://echo.htmlacademy.ru" class="feedback-form" id="feedback-form">
               <span class="feedback-form__header">Остались вопросы? Задайте их нам!</span>
               <p class="feedback-form__secondary-header">Мы проконсультируем Вас бесплатно</p>
               <input class="feedback-form__input feedback-form__name" id="feedback-form__name" type="text" placeholder="Имя">
               <input class="feedback-form__input feedback-form__phone" id="feedback-form__phone" type="tel" placeholder="Телефон">
-              <textarea class="feedback-form__question" name="" id="" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+              <textarea class="feedback-form__question" name="feedback-form__textarea" id="feedback-form__textarea" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
               <button class="feedback-form__button">Задать вопрос</button>
               <div class="feedback-form__agreement-wrapper">
                 <label for="agreement" class="feedback-form__label">Я согласен на обработку  персональных данных</label>
@@ -214,13 +217,13 @@
                 </div>
             </div>
             <ul class="footer-menu__list footer-menu__no-display footer-menu__list--no-js">
-              <li class="footer-menu__item">О компании</li>
-              <li class="footer-menu__item">Продукты</li>
-              <li class="footer-menu__item">Производство печатных плат</li>
-              <li class="footer-menu__item">Монтаж печатных плат</li>
-              <li class="footer-menu__item">Комплектующие</li>
-              <li class="footer-menu__item">Доставка</li>
-              <li class="footer-menu__item">Контакты</li>
+              <li class="footer-menu__item"><a href="#" class="footer-menu__link">О Компании</a></li>
+              <li class="footer-menu__item"><a href="#" class="footer-menu__link">Продукты</a></li>
+              <li class="footer-menu__item"><a href="#" class="footer-menu__link">Производство печатных плат</a></li>
+              <li class="footer-menu__item"><a href="#" class="footer-menu__link">Монтаж печатных плат</a></li>
+              <li class="footer-menu__item"><a href="#" class="footer-menu__link">Комплектующие</a></li>
+              <li class="footer-menu__item"><a href="#" class="footer-menu__link">Доставка</a></li>
+              <li class="footer-menu__item"><a href="#" class="footer-menu__link">Контакты</a></li>
             </ul>
           </div>
           <div class="footer-contacts">
@@ -241,46 +244,15 @@
         </div>
       </footer>
     </div>
-
-    <!-- Модалки -->
-    <!-- <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div> -->
-    <!-- <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script> -->
     <!-- Модальное окно -->
     <div class="modal-form" id="modal-form">
-      <form action="" class="modal-form__wrapper">
+      <form action="https://echo.htmlacademy.ru" class="modal-form__wrapper">
         <img src="../img/svg/close-modal.svg" alt="Закрыть" width="20" height="20" class="modal-form__close">
         <span class="modal-form__header">Закажите звонок</span>
         <p class="modal-form__secondary-header">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
         <input class="modal-form__input modal-form__name" id="modal-form__name" type="text" placeholder="Имя" autofocus>
-        <input class="modal-form__input modal-form__phone" id="modal-form__phone" type="text" placeholder="Телефон">
-        <textarea class="modal-form__question" name="" id="" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+        <input class="modal-form__input modal-form__phone" id="modal-form__phone" type="tel" placeholder="Телефон">
+        <textarea class="modal-form__question" name="modal-form__textarea" id="modal-form__textarea" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
         <button class="modal-form__button">Задать вопрос</button>
         <div class="modal-form__agreement-wrapper">
           <label for="modal-agreement" class="modal-form__label">Я согласен на обработку  персональных данных</label>
@@ -291,7 +263,7 @@
         </div>
       </form>
     </div>
-    <script src="js/inputmask.min.js"></script>
+    <script src="js/inputmask.js"></script>
     <script src="js/just-validate.production.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
