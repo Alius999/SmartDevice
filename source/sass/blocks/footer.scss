@@ -1,7 +1,10 @@
 .footer {
-  min-width: 320px;
-  padding: 35px 0;
   background: $text-color;
+
+  @media (max-width: $tablet-width) {
+    min-width: 320px;
+    padding: 35px 0;
+  }
 
   @media (min-width: $tablet-width) {
     min-width: 768px;

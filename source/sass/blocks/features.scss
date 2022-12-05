@@ -1,7 +1,9 @@
 .features {
-  min-width: 320px;
-  padding: 48px 25px 0;
-  background: $text-white;
+  @media (max-width: $tablet-width) {
+    min-width: 320px;
+    padding: 48px 25px 0;
+    background: $text-white;
+  }
 
   @media (min-width: $tablet-width) {
     min-width: 768px;
@@ -30,23 +32,38 @@
   }
 }
 
+.features__item--active .features__item-image {
+  fill: $text-white;
+}
+
+.features__item-image {
+  fill: $main-blue;
+
+  @media (min-width: $tablet-width) {
+    width: 35px;
+  }
+}
+
 .features__item {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 30px;
-  min-height: 340px;
+
+  @media (max-width: $tablet-width) {
+    padding: 30px;
+    min-height: 340px;
+  }
 
   &:hover {
     background: $main-blue;
   }
 
   &:hover .features__item-header,
-  &:hover .features__item-text {
+  &:hover p {
     color: $text-white;
   }
 
-  &:hover .features__item-image-path {
+  &:hover .features__item-image {
     fill: $text-white;
   }
 
@@ -64,15 +81,11 @@
   }
 }
 
-.features__item-image {
-  @media (min-width: $tablet-width) {
-    width: 35px;
-  }
-}
-
 .features__item--third,
 .features__item--fourth {
-  min-height: 325px;
+  @media (max-width: $tablet-width) {
+    min-height: 325px;
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 360px;
@@ -105,23 +118,21 @@
   .features__item-header {
     color: $text-white;
   }
-
-  .features__item-text {
-    color: $text-white;
-  }
 }
 
-.features__blue-decor {
-  position: absolute;
-  height: 100%;
-  width: 5px;
-  background: $main-blue;
-  left: 0;
-  top: 0;
-}
+// .features__blue-decor {
+//   position: absolute;
+//   height: 100%;
+//   width: 5px;
+//   background: $main-blue;
+//   left: 0;
+//   top: 0;
+// }
 
 .features__item:not(:last-of-type) {
-  margin-bottom: 30px;
+  @media (max-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -131,12 +142,15 @@
 .features__item-header {
   @include header-font-regular;
 
-  margin: 12px 0 10px;
-  font-size: 20px;
-  line-height: 28px;
   letter-spacing: 0;
   text-align: left;
   color: $main-blue;
+
+  @media (max-width: $tablet-width) {
+    margin: 12px 0 10px;
+    font-size: 20px;
+    line-height: 28px;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 16px 0 10px;
@@ -158,15 +172,18 @@
   padding-right: 40px;
 }
 
-.features__item-text {
+.features__list p {
   @include common-font-regular;
 
   margin: 0 0 15px;
-  font-size: 14px;
-  line-height: 19px;
   letter-spacing: 0;
   text-align: left;
   color: $text-color;
+
+  @media (max-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 19px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -174,7 +191,22 @@
   }
 }
 
-.features__text--third,
-.features__text--fourth {
+.features__item--active p {
+  color: $text-white;
+}
+
+.features__item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 5px;
+  background: $main-blue;
+  left: 0;
+  top: 0;
+}
+
+.features__item--third p,
+.features__item--fourth p {
   margin: 7px 0 0;
 }

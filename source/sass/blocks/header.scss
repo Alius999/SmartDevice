@@ -1,11 +1,14 @@
 .header {
   position: relative;
   z-index: 1;
-  min-width: 320px;
-  min-height: 70px;
   margin: 0;
-  padding: 15px 26px 20px;
   background: linear-gradient(180deg, $text-color 84.9%, rgba(4, 24, 39, 0) 100%);
+
+  @media (max-width: $tablet-width) {
+    min-width: 320px;
+    min-height: 70px;
+    padding: 15px 26px 20px;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 20px 58px 25px 50px;
@@ -42,7 +45,9 @@
 }
 
 .header__slogan {
-  display: none;
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 5px 0 0 15px;
@@ -50,7 +55,7 @@
   }
 }
 
-.header__slogan-name {
+.header__slogan p:first-child {
   @media (min-width: $tablet-width) {
     @include header-font-bold;
 
@@ -59,10 +64,11 @@
     letter-spacing: 0;
     text-align: left;
     color: $text-white;
+    margin: 0;
   }
 }
 
-.header__slogan-text {
+.header__slogan p:last-child {
   @media (min-width: $tablet-width) {
     @include secondary-slogan;
     font-size: 12px;
@@ -76,12 +82,15 @@
 }
 
 .header__calback {
-  display: none;
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
 
   @media (min-width: $desktop-width) {
     @include header-font-bold;
 
-    display: block;
+    display: grid;
+    align-items: center;
     width: 160px;
     height: 40px;
     border-radius: 3px;

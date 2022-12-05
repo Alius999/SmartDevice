@@ -1,7 +1,10 @@
 .feedback {
-  min-width: 320px;
-  padding: 48px 25px 88px;
   background: $main-blue;
+
+  @media (max-width: $tablet-width) {
+    min-width: 320px;
+    padding: 48px 25px 88px;
+  }
 
   @media (min-width: $tablet-width) {
     min-width: 768px;
@@ -15,7 +18,9 @@
 }
 
 .feedback__container {
-  display: block;
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -27,7 +32,9 @@
 }
 
 .feedback__airplane {
-  display: none;
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 
   @media (min-width: $desktop-width) {
     display: block;

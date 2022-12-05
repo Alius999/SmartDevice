@@ -1,7 +1,10 @@
 .goods {
   min-height: 320px;
-  padding: 20px 25px 86px;
   background: $goods-bg;
+
+  @media (max-width: $tablet-width) {
+    padding: 20px 25px 86px;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 18px 48px 75px 50px;
@@ -14,11 +17,14 @@
 
 .goods__header {
   @include header-font-regular;
-  font-size: 28px;
-  line-height: 39px;
   letter-spacing: 0;
   text-align: left;
   color: $text-white;
+
+  @media (max-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 39px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -27,16 +33,16 @@
 }
 
 .goods__header--mobile {
-  display: block;
-  padding-right: 10px;
-
-  @media (min-width: $tablet-width) {
-    display: none;
+  @media (max-width: $tablet-width) {
+    display: block;
+    padding-right: 10px;
   }
 }
 
 .goods__header--tablet {
-  display: none;
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -73,8 +79,11 @@
 .goods__item-link {
   display: block;
   position: relative;
-  padding: 25px 30px;
   min-height: 250px;
+
+  @media (max-width: $tablet-width) {
+    padding: 25px 30px;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 37px 44px;
@@ -88,7 +97,9 @@
 }
 
 .goods__item:not(:last-of-type) {
-  margin-bottom: 30px;
+  @media (max-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
 
   @media (min-width: $desktop-width) {
     margin: 0;
@@ -96,11 +107,10 @@
 }
 
 .goods__item--first {
-  background: url("../img/first-card-bg.png") no-repeat;
-  background-size: cover;
-  // background-color: $substrate;
-
   @media (max-width: $tablet-width) {
+    background: url("../img/first-card-bg.png") no-repeat;
+    background-size: cover;
+
     @media (min-resolution: 2dppx) {
       background: url("../img/first-card-bg@2x.png") no-repeat;
       background-size: cover;
@@ -129,11 +139,12 @@
 }
 
 .goods__item--second {
-  background: url("../img/second-card-bg.png") no-repeat;
-  background-size: cover;
   background-color: $substrate;
 
   @media (max-width: $tablet-width) {
+    background: url("../img/second-card-bg.png") no-repeat;
+    background-size: cover;
+
     @media (min-resolution: 2dppx) {
       background: url("../img/second-card-bg@2x.png") no-repeat;
       background-size: cover;
@@ -168,11 +179,12 @@
 }
 
 .goods__item--third {
-  background: url("../img/third-card-bg.png") no-repeat;
-  background-size: cover;
   background-color: $substrate;
 
   @media (max-width: $tablet-width) {
+    background: url("../img/third-card-bg.png") no-repeat;
+    background-size: cover;
+
     @media (min-resolution: 2dppx) {
       background: url("../img/third-card-bg@2x.png") no-repeat;
       background-size: cover;
@@ -200,14 +212,17 @@
   }
 }
 
-.goods__content {
+.goods__item p {
   @include header-font-regular;
   @include reset;
-  font-size: 18px;
   line-height: 30px;
   letter-spacing: 0;
   text-align: left;
   color: $text-white;
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -218,22 +233,20 @@
   }
 }
 
-.goods__button {
+.goods__arrow-icon {
   position: absolute;
-  display: grid;
+  display: block;
   align-items: center;
   justify-items: center;
   outline: none;
   border: 0;
   bottom: 0;
   right: 0;
-  height: 40px;
-  width: 40px;
   border-radius: 3px 0 0 0;
   background: $main-blue;
+  box-sizing: content-box;
 
   @media (min-width: $tablet-width) {
-    width: 60px;
-    height: 60px;
+    padding: 24px 27px;
   }
 }

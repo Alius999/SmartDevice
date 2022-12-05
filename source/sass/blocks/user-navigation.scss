@@ -2,10 +2,16 @@
   @include reset;
 
   display: grid;
-  grid-template-columns: 1fr 0.7fr;
   align-items: center;
   list-style-type: none;
-  margin-bottom: 3px;
+
+  @media (max-width: $desktop-width) {
+    grid-template-columns: 1fr 0.7fr;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 3px;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 14px;
@@ -24,7 +30,9 @@
 }
 
 .user-navigation__item-text {
-  display: none;
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
 
   @media (min-width: $desktop-width) {
     @include common-font-regular;

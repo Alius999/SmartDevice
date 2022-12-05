@@ -1,6 +1,8 @@
 .socials {
-  margin: 20px 0 28px;
-  padding: 0 92px;
+  @media (max-width: $tablet-width) {
+    margin: 20px 0 28px;
+    padding: 0 92px;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 10px -2px 28px 0;
