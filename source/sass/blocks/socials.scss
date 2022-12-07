@@ -1,21 +1,22 @@
 .socials {
-  @media (max-width: $tablet-width) {
-    margin: 20px 0 28px;
-    padding: 0 92px;
-  }
+  padding: 0 92px;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  justify-self: start;
+  margin: 50px 0 0 15px;
 
-  @media (min-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     margin: 10px -2px 28px 0;
     grid-column: 2/3;
     padding: 0;
     justify-self: end;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (max-width: $tablet-width) {
+    padding: 0;
     grid-column: 1/2;
-    grid-row: 2/3;
     justify-self: start;
-    margin: 50px 0 0 15px;
+    margin: 20px 0 28px 50px;
   }
 }
 

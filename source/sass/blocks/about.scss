@@ -1,115 +1,109 @@
 .about {
-  @media (max-width: $tablet-width) {
-    min-width: 320px;
-    padding: 50px 25px 80px;
-    background: $text-white;
-  }
+  background: $text-white;
+  padding: 0 20px;
 
   @media (max-width: $desktop-width) {
     padding: 0 0 80px;
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 0 20px;
+  @media (max-width: $tablet-width) {
+    min-width: 320px;
+    padding: 50px 25px 80px;
   }
 }
 
-// .about__container-wrapper {
-//   @media (min-width: $desktop-width) {
-//     min-width: 984px;
-//     max-width: 1220px;
-//     margin: 0 auto;
-//   }
-// }
-
 .about__container {
-  @media (min-width: $tablet-width) {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-auto-rows: minmax(15px, auto);
+  padding: 0 0 100px;
+  min-width: 984px;
+  max-width: 1220px;
+  margin: 0 auto;
+
+  @media (max-width: $desktop-width) {
     padding: 0 47px;
-    display: grid;
+    min-width: 668px;
     grid-template-columns: 178px 1fr;
   }
 
-  @media (min-width: $desktop-width) {
-    grid-template-columns: 250px 1fr;
-    grid-auto-rows: minmax(15px, auto);
-    padding: 0 0 100px;
-    min-width: 984px;
-    max-width: 1220px;
-    margin: 0 auto;
+  @media (max-width: $tablet-width) {
+    grid-template-columns: 1fr;
+    min-width: 270px;
+    padding: 0 25px;
   }
 }
 
 .about__container picture {
-  @media (min-width: $tablet-width) {
     margin: 5px 0 0;
     display: block;
     grid-column: 1/2;
     grid-row: 1/3;
-  }
+
+    @media (max-width: $tablet-width) {
+      margin: 0;
+    }
 }
 
 .about__img {
+  margin: 0;
+  display: block;
+  grid-column: 1/2;
+  grid-row: 1/3;
+
+  @media (max-width: $desktop-width) {
+    margin: 5px 0 0;
+  }
+
   @media (max-width: $tablet-width) {
     display: none;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin: 5px 0 0;
-    display: block;
-    grid-column: 1/2;
-    grid-row: 1/3;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
   }
 }
 
 .about__text-container {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: column;
-    // width: 950px;
+    display: block;
   }
 }
 
-.about__header {
+.about__text-container h2 {
+  @include header-font-regular;
+  font-size: 36px;
+  line-height: 51px;
+  letter-spacing: 0;
+  text-align: left;
+  color: $text-color;
+
   @media (max-width: $tablet-width) {
-    @include header-font-regular;
     font-size: 28px;
     line-height: 39px;
-    letter-spacing: 0;
-    text-align: left;
-    color: $text-color;
-  }
-
-  @media (min-width: $tablet-width) {
-    font-size: 36px;
-    line-height: 51px;
   }
 }
 
 .about__text-container p {
-  @media (max-width: $tablet-width) {
-    @include common-font-regular;
-    font-size: 14px;
-    line-height: 19px;
-    letter-spacing: 0;
-    text-align: left;
-    color: $text-color;
-    margin: 10px 0 16px;
-  }
+  @include common-font-regular;
+  margin: 10px 0 0;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0;
+  text-align: left;
+  color: $text-color;
 
   @media (min-width: $tablet-width) {
-    margin: 10px 0 0;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 10px 0 16px;
   }
 }
 
 .about__text--second-paragraph {
-  @media (min-width: $tablet-width) {
-    margin: 20px 0 0;
+  margin: 20px 0 0;
+
+  @media (max-width: $tablet-width) {
+    margin: 0;
   }
 }
 
@@ -135,14 +129,15 @@
 
 .about__button {
   @include header-font-bold;
+  height: 45px;
+  width: 180px;
+  line-height: 17px;
+  margin: 18px 0 0;
 
-  min-height: 35px;
-  width: 160px;
   background: $text-white;
   border-radius: 3px;
   border: 1px solid $main-blue;
   font-size: 14px;
-  line-height: 16px;
   letter-spacing: 0.05em;
   text-align: center;
   text-transform: uppercase;
@@ -150,11 +145,11 @@
   box-sizing: border-box;
   cursor: pointer;
 
-  @media (min-width: $tablet-width) {
-    height: 45px;
-    width: 180px;
-    line-height: 17px;
-    margin: 18px 0 0;
+  @media (max-width: $tablet-width) {
+    min-height: 35px;
+    width: 160px;
+    line-height: 16px;
+
   }
 }
 
