@@ -92,12 +92,14 @@
 }
 
 .features__item--fourth h3 {
-  @media (min-width: $tablet-width) {
+  margin: 22px 0 12px;
+
+  @media (max-width: $desktop-width) {
     margin: 12px 0 3px;
   }
 
-  @media (min-width: $desktop-width) {
-    margin: 22px 0 12px;
+  @media (max-width: $tablet-width) {
+    margin: 0;
   }
 }
 
@@ -131,7 +133,7 @@
   text-align: left;
   color: $main-blue;
 
-  @media (min-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     margin: 16px 0 10px;
   }
 

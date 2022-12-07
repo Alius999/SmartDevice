@@ -1043,6 +1043,10 @@ button,
   min-height: 360px;
 }
 
+.features__item--fourth h3 {
+  margin: 22px 0 12px;
+}
+
 .features__item--third h3 {
   margin: 22px 0 12px;
 }
@@ -1200,6 +1204,10 @@ button,
   text-align: left;
   color: #041827;
   margin: 10px 0 20px;
+}
+
+.about__text--after-divider-mobile {
+  display: inline;
 }
 
 .about__button {
@@ -2304,29 +2312,6 @@ button,
 */
 
 @media (min-width: 768px) {
-  .features__item--fourth h3 {
-    margin: 12px 0 3px;
-  }
-
-  .features__item h3 {
-    margin: 16px 0 10px;
-  }
-
-  .about__text-container p {
-    font-size: 14px;
-    line-height: 19px;
-    margin: 10px 0 16px;
-  }
-
-  .about__text--after-divider-mobile {
-    display: inline;
-  }
-
-  .footer-menu {
-    min-width: 320px;
-    margin: 0;
-  }
-
   .footer-menu__list {
     height: 240px;
     display: -webkit-box;
@@ -2344,14 +2329,6 @@ button,
 }
 
 @media (min-width: 1024px) {
-  .features__item--fourth h3 {
-    margin: 22px 0 12px;
-  }
-
-  .about__text-container {
-    display: block;
-  }
-
   .footer-menu__list {
     height: 160px;
     width: 248px;
@@ -2442,8 +2419,16 @@ button,
     max-width: 100%;
   }
 
+  .features__item--fourth h3 {
+    margin: 12px 0 3px;
+  }
+
   .features__item--third h3 {
     margin: 16px 0 6px;
+  }
+
+  .features__item h3 {
+    margin: 16px 0 10px;
   }
 
   .about {
@@ -2459,6 +2444,10 @@ button,
 
   .about__img {
     margin: 5px 0 0;
+  }
+
+  .about__text-container {
+    display: block;
   }
 
   .goods {
@@ -2745,6 +2734,10 @@ button,
     min-height: 325px;
   }
 
+  .features__item--fourth h3 {
+    margin: 0;
+  }
+
   .features__item--third h3 {
     margin: 0;
   }
@@ -2789,8 +2782,18 @@ button,
     line-height: 39px;
   }
 
+  .about__text-container p {
+    font-size: 14px;
+    line-height: 19px;
+    margin: 10px 0 16px;
+  }
+
   .about__text--second-paragraph {
     margin: 0;
+  }
+
+  .about__text--after-divider-mobile {
+    display: none;
   }
 
   .about__button {
@@ -2908,6 +2911,11 @@ button,
     -ms-grid-column-align: start;
     justify-self: start;
     margin: 20px 0 28px 50px;
+  }
+
+  .footer-menu {
+    min-width: 320px;
+    margin: 0;
   }
 
   .footer-menu__header {
