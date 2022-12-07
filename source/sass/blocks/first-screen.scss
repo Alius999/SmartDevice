@@ -5,24 +5,12 @@
   min-height: 880px;
   margin-top: -120px;
   padding: 305px 50px 180px;
-  background-image: -webkit-image-set(url("../img/first-screen-bg-desktop.png") 1x,
-      url("../img/first-screen-bg-desktop@2x.png") 2x);
-  background-image: image-set(url("../img/first-screen-bg-desktop.webp") type("image/webp") 1x,
-      url("../img/first-screen-bg-desktop@2x.webp") type("image/webp") 2x,
-      url("../img/first-screen-bg-desktop.png") 1x,
-      url("../img/first-screen-bg-desktop@2x.png") 2x);
   background-size: cover;
   background-color: $substrate;
 
   @media (max-width: $desktop-width) {
     margin-top: -100px;
     padding: 180px 50px 205px;
-    background-image: -webkit-image-set(url("../img/first-screen-bg-tablet.png") 1x,
-        url("../img/first-screen-bg-tablet@2x.png") 2x);
-    background-image: image-set(url("../img/first-screen-bg-tablet.webp") type("image/webp") 1x,
-        url("../img/first-screen-bg-tablet@2x.webp") type("image/webp") 2x,
-        url("../img/first-screen-bg-tablet.png") 1x,
-        url("../img/first-screen-bg-tablet@2x.png") 2x);
     background-size: cover;
   }
 
@@ -31,13 +19,67 @@
     padding: 150px 25px 190px;
     margin-top: -70px;
     min-height: 560px;
-    background-image: -webkit-image-set(url("../img/first-screen-bg.png") 1x,
-        url("../img/first-screen-bg@2x.png") 2x);
-    background-image: image-set(url("../img/first-screen-bg.webp") type("image/webp") 1x,
-        url("../img/first-screen-bg@2x.webp") type("image/webp") 2x,
-        url("../img/first-screen-bg.png") 1x,
-        url("../img/first-screen-bg@2x.png") 2x);
     background-size: cover;
+  }
+}
+
+.webp .first-screen {
+  background-image: url("../img/webp/first-screen-bg-desktop.webp");
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/webp/first-screen-bg-desktop@2x.webp") no-repeat;
+    background-size: cover;
+  }
+
+  @media (max-width: $desktop-width) {
+    background-image: url("../img/webp/first-screen-bg-tablet.webp");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/webp/first-screen-bg-tablet@2x.webp") no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/webp/first-screen-bg.webp");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/webp/first-screen-bg@2x.webp") no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.nowebp .first-screen {
+  background-image: url("../img/first-screen-bg-desktop.png");
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/first-screen-bg-desktop@2x.png") no-repeat;
+    background-size: cover;
+  }
+
+  @media (max-width: $desktop-width) {
+    background-image: url("../img/first-screen-bg-tablet.png");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/first-screen-bg-tablet@2x.png") no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/first-screen-bg.png");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/first-screen-bg@2x.png") no-repeat;
+      background-size: cover;
+    }
   }
 }
 

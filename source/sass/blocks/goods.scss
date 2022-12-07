@@ -55,10 +55,11 @@
   list-style-type: none;
   min-width: 984px;
   max-width: 1220px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 85px;
-  margin: 38px 0 0;
+  // margin: 38px 0 0;
 
   @media (max-width: $desktop-width) {
     min-width: 668px;
@@ -100,66 +101,184 @@
   }
 }
 
-.goods__item--first {
-  background-image: -webkit-image-set(url("../img/first-card-bg-desktop.png") 1x,
-      url("../img/first-card-bg-desktop@2x.png") 2x);
-  background-image: image-set(url("../img/first-card-bg-desktop.webp") type("image/webp") 1x,
-      url("../img/first-card-bg-desktop@2x.webp") type("image/webp") 2x,
-      url("../img/first-card-bg-desktop.png") 1x,
-      url("../img/first-card-bg-desktop@2x.png") 2x);
+.webp .goods__item--first {
+  background-image: url("../img/webp/first-card-bg-desktop.webp");
   background-size: cover;
-  background-color: $substrate;
 
-  @media (max-width: $desktop-width) {
-    background-image: -webkit-image-set(url("../img/first-card-bg-tablet.png") 1x,
-        url("../img/first-card-bg-tablet@2x.png") 2x);
-    background-image: image-set(url("../img/first-card-bg-tablet.webp") type("image/webp") 1x,
-        url("../img/first-card-bg-tablet@2x.webp") type("image/webp") 2x,
-        url("../img/first-card-bg-tablet.png") 1x,
-        url("../img/first-card-bg-tablet@2x.png") 2x);
+  @media (min-resolution: 2dppx) {
+    background: url("../img/webp/first-card-bg-desktop@2x.webp") no-repeat;
     background-size: cover;
   }
 
-  @media (max-width: $tablet-width) {
-    background-image: -webkit-image-set(url("../img/first-card-bg.png") 1x,
-        url("../img/first-card-bg@2x.png") 2x);
-    background-image: image-set(url("../img/first-card-bg.webp") type("image/webp") 1x,
-        url("../img/first-card-bg@2x.webp") type("image/webp") 2x,
-        url("../img/first-card-bg.png") 1x,
-        url("../img/first-card-bg@2x.png") 2x);
+  @media (max-width: $desktop-width) {
+    background-image: url("../img/webp/first-card-bg-tablet.webp");
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/webp/first-card-bg-tablet@2x.webp") no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/webp/first-card-bg.webp");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/webp/first-card-bg@2x.webp") no-repeat;
+      background-size: cover;
+    }
   }
 }
 
-.goods__item--second {
+.nowebp .goods__item--first {
+  background-image: url("../img/first-card-bg-desktop.png");
   background-size: cover;
-  // background: url("../img/second-card-bg-desktop.png") no-repeat;
-  background-image: -webkit-image-set(url("../img/second-card-bg-desktop.png") 1x,
-      url("../img/second-card-bg-desktop@2x.png") 2x);
-  background-image: image-set(url("../img/second-card-bg-desktop.webp") type("image/webp") 1x,
-      url("../img/second-card-bg-desktop@2x.webp") type("image/webp") 2x,
-      url("../img/second-card-bg-desktop.png") 1x,
-      url("../img/second-card-bg-desktop@2x.png") 2x);
-  background-size: cover;
-  background-color: $substrate;
 
-  @media (max-width: $desktop-width) {
-    background-image: -webkit-image-set(url("../img/second-card-bg-tablet.png") 1x,
-        url("../img/second-card-bg-tablet@2x.png") 2x);
-    background-image: image-set(url("../img/second-card-bg-tablet.webp") type("image/webp") 1x,
-        url("../img/second-card-bg-tablet@2x.webp") type("image/webp") 2x,
-        url("../img/second-card-bg-tablet.png") 1x,
-        url("../img/second-card-bg-tablet@2x.png") 2x);
+  @media (min-resolution: 2dppx) {
+    background: url("../img/first-card-bg-desktop@2x.png") no-repeat;
     background-size: cover;
   }
 
+  @media (max-width: $desktop-width) {
+    background-image: url("../img/first-card-bg-tablet.png");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/first-card-bg-tablet@2x.png") no-repeat;
+      background-size: cover;
+    }
+  }
+
   @media (max-width: $tablet-width) {
-    background-image: -webkit-image-set(url("../img/second-card-bg.png") 1x,
-        url("../img/second-card-bg@2x.png") 2x);
-    background-image: image-set(url("../img/second-card-bg.webp") type("image/webp") 1x,
-        url("../img/second-card-bg@2x.webp") type("image/webp") 2x,
-        url("../img/second-card-bg.png") 1x,
-        url("../img/second-card-bg@2x.png") 2x);
+    background-image: url("../img/first-card-bg.png");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/first-card-bg@2x.png") no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.webp .goods__item--second {
+  background-image: url("../img/webp/second-card-bg-desktop.webp");
+  background-size: cover;
+
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/webp/second-card-bg-desktop@2x.webp") no-repeat;
+    background-size: cover;
+  }
+
+  @media (max-width: $desktop-width) {
+    background-image: url("../img/webp/second-card-bg-tablet.webp");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/webp/second-card-bg-tablet@2x.webp") no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/webp/second-card-bg.webp");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/webp/second-card-bg@2x.webp") no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.nowebp .goods__item--second {
+  background-image: url("../img/second-card-bg-desktop.png");
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/second-card-bg-desktop@2x.png") no-repeat;
+    background-size: cover;
+  }
+
+  @media (max-width: $desktop-width) {
+    background-image: url("../img/second-card-bg-tablet.png");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/second-card-bg-tablet@2x.png") no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/second-card-bg.png");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/second-card-bg@2x.png") no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.webp .goods__item--third {
+  background-image: url("../img/webp/third-card-bg-desktop.webp");
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/webp/third-card-bg-desktop@2x.webp") no-repeat;
+    background-size: cover;
+  }
+
+  @media (max-width: $desktop-width) {
+    background-image: url("../img/webp/third-card-bg-tablet.webp");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/webp/third-card-bg-tablet@2x.webp") no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/webp/third-card-bg.webp");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/webp/third-card-bg@2x.webp") no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.nowebp .goods__item--third {
+  background-image: url("../img/third-card-bg-desktop.png");
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/third-card-bg-desktop@2x.png") no-repeat;
+    background-size: cover;
+  }
+
+  @media (max-width: $desktop-width) {
+    background-image: url("../img/third-card-bg-tablet.png");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/third-card-bg-tablet@2x.png") no-repeat;
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/third-card-bg.png");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/third-card-bg@2x.png") no-repeat;
+      background-size: cover;
+    }
   }
 }
 
@@ -168,37 +287,6 @@
 
   @media (max-width: $desktop-width) {
     display: inline;
-  }
-}
-
-.goods__item--third {
-  background-image: -webkit-image-set(url("../img/third-card-bg-desktop.png") 1x,
-      url("../img/third-card-bg-desktop@2x.png") 2x);
-  background-image: image-set(url("../img/third-card-bg-desktop.webp") type("image/webp") 1x,
-      url("../img/third-card-bg-desktop@2x.webp") type("image/webp") 2x,
-      url("../img/third-card-bg-desktop.png") 1x,
-      url("../img/third-card-bg-desktop@2x.png") 2x);
-  background-size: cover;
-  background-color: $substrate;
-
-  @media (max-width: $desktop-width) {
-    background-image: -webkit-image-set(url("../img/third-card-bg-tablet.png") 1x,
-        url("../img/third-card-bg-tablet@2x.png") 2x);
-    background-image: image-set(url("../img/third-card-bg-tablet.webp") type("image/webp") 1x,
-        url("../img/third-card-bg-tablet@2x.webp") type("image/webp") 2x,
-        url("../img/third-card-bg-tablet.png") 1x,
-        url("../img/third-card-bg-tablet@2x.png") 2x);
-    background-size: cover;
-  }
-
-  @media (max-width: $tablet-width) {
-    background-image: -webkit-image-set(url("../img/third-card-bg.png") 1x,
-        url("../img/third-card-bg@2x.png") 2x);
-    background-image: image-set(url("../img/third-card-bg.webp") type("image/webp") 1x,
-        url("../img/third-card-bg@2x.webp") type("image/webp") 2x,
-        url("../img/third-card-bg.png") 1x,
-        url("../img/third-card-bg@2x.png") 2x);
-    background-size: cover;
   }
 }
 
