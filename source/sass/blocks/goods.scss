@@ -55,7 +55,6 @@
   list-style-type: none;
   min-width: 984px;
   max-width: 1220px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 85px;
@@ -102,89 +101,65 @@
 }
 
 .goods__item--first {
-  background-image: -webkit-image-set(
-    url("../img/first-card-bg-desktop.png") 1x,
-    url("../img/first-card-bg-desktop@2x.png") 2x
-  );
-  background-image: image-set(
-    url("../img/first-card-bg-desktop.webp") type("image/webp") 1x,
-    url("../img/first-card-bg-desktop@2x.webp") type("image/webp") 2x,
-    url("../img/first-card-bg-desktop.png") 1x,
-    url("../img/first-card-bg-desktop@2x.png") 2x
-  );
+  background-image: -webkit-image-set(url("../img/first-card-bg-desktop.png") 1x,
+      url("../img/first-card-bg-desktop@2x.png") 2x);
+  background-image: image-set(url("../img/first-card-bg-desktop.webp") type("image/webp") 1x,
+      url("../img/first-card-bg-desktop@2x.webp") type("image/webp") 2x,
+      url("../img/first-card-bg-desktop.png") 1x,
+      url("../img/first-card-bg-desktop@2x.png") 2x);
   background-size: cover;
   background-color: $substrate;
 
   @media (max-width: $desktop-width) {
-    background-image: -webkit-image-set(
-      url("../img/first-card-bg-tablet.png") 1x,
-      url("../img/first-card-bg-tablet@2x.png") 2x
-    );
-    background-image: image-set(
-      url("../img/first-card-bg-tablet.webp") type("image/webp") 1x,
-      url("../img/first-card-bg-tablet@2x.webp") type("image/webp") 2x,
-      url("../img/first-card-bg-tablet.png") 1x,
-      url("../img/first-card-bg-tablet@2x.png") 2x
-    );
+    background-image: -webkit-image-set(url("../img/first-card-bg-tablet.png") 1x,
+        url("../img/first-card-bg-tablet@2x.png") 2x);
+    background-image: image-set(url("../img/first-card-bg-tablet.webp") type("image/webp") 1x,
+        url("../img/first-card-bg-tablet@2x.webp") type("image/webp") 2x,
+        url("../img/first-card-bg-tablet.png") 1x,
+        url("../img/first-card-bg-tablet@2x.png") 2x);
     background-size: cover;
   }
 
   @media (max-width: $tablet-width) {
-  background-image: -webkit-image-set(
-    url("../img/first-card-bg.png") 1x,
-    url("../img/first-card-bg@2x.png") 2x
-  );
-  background-image: image-set(
-    url("../img/first-card-bg.webp") type("image/webp") 1x,
-    url("../img/first-card-bg@2x.webp") type("image/webp") 2x,
-    url("../img/first-card-bg.png") 1x,
-    url("../img/first-card-bg@2x.png") 2x
-  );
-  background-size: cover;
+    background-image: -webkit-image-set(url("../img/first-card-bg.png") 1x,
+        url("../img/first-card-bg@2x.png") 2x);
+    background-image: image-set(url("../img/first-card-bg.webp") type("image/webp") 1x,
+        url("../img/first-card-bg@2x.webp") type("image/webp") 2x,
+        url("../img/first-card-bg.png") 1x,
+        url("../img/first-card-bg@2x.png") 2x);
+    background-size: cover;
   }
 }
 
 .goods__item--second {
   background-size: cover;
   // background: url("../img/second-card-bg-desktop.png") no-repeat;
-  background-image: -webkit-image-set(
-    url("../img/second-card-bg-desktop.png") 1x,
-    url("../img/second-card-bg-desktop@2x.png") 2x
-  );
-  background-image: image-set(
-    url("../img/second-card-bg-desktop.webp") type("image/webp") 1x,
-    url("../img/second-card-bg-desktop@2x.webp") type("image/webp") 2x,
-    url("../img/second-card-bg-desktop.png") 1x,
-    url("../img/second-card-bg-desktop@2x.png") 2x
-  );
+  background-image: -webkit-image-set(url("../img/second-card-bg-desktop.png") 1x,
+      url("../img/second-card-bg-desktop@2x.png") 2x);
+  background-image: image-set(url("../img/second-card-bg-desktop.webp") type("image/webp") 1x,
+      url("../img/second-card-bg-desktop@2x.webp") type("image/webp") 2x,
+      url("../img/second-card-bg-desktop.png") 1x,
+      url("../img/second-card-bg-desktop@2x.png") 2x);
   background-size: cover;
   background-color: $substrate;
 
   @media (max-width: $desktop-width) {
-    background-image: -webkit-image-set(
-      url("../img/second-card-bg-tablet.png") 1x,
-      url("../img/second-card-bg-tablet@2x.png") 2x
-    );
-    background-image: image-set(
-      url("../img/second-card-bg-tablet.webp") type("image/webp") 1x,
-      url("../img/second-card-bg-tablet@2x.webp") type("image/webp") 2x,
-      url("../img/second-card-bg-tablet.png") 1x,
-      url("../img/second-card-bg-tablet@2x.png") 2x
-    );
+    background-image: -webkit-image-set(url("../img/second-card-bg-tablet.png") 1x,
+        url("../img/second-card-bg-tablet@2x.png") 2x);
+    background-image: image-set(url("../img/second-card-bg-tablet.webp") type("image/webp") 1x,
+        url("../img/second-card-bg-tablet@2x.webp") type("image/webp") 2x,
+        url("../img/second-card-bg-tablet.png") 1x,
+        url("../img/second-card-bg-tablet@2x.png") 2x);
     background-size: cover;
   }
 
   @media (max-width: $tablet-width) {
-  background-image: -webkit-image-set(
-    url("../img/second-card-bg.png") 1x,
-    url("../img/second-card-bg@2x.png") 2x
-  );
-  background-image: image-set(
-    url("../img/second-card-bg.webp") type("image/webp") 1x,
-    url("../img/second-card-bg@2x.webp") type("image/webp") 2x,
-    url("../img/second-card-bg.png") 1x,
-    url("../img/second-card-bg@2x.png") 2x
-  );
+    background-image: -webkit-image-set(url("../img/second-card-bg.png") 1x,
+        url("../img/second-card-bg@2x.png") 2x);
+    background-image: image-set(url("../img/second-card-bg.webp") type("image/webp") 1x,
+        url("../img/second-card-bg@2x.webp") type("image/webp") 2x,
+        url("../img/second-card-bg.png") 1x,
+        url("../img/second-card-bg@2x.png") 2x);
   }
 }
 
@@ -197,44 +172,32 @@
 }
 
 .goods__item--third {
-  background-image: -webkit-image-set(
-    url("../img/third-card-bg-desktop.png") 1x,
-    url("../img/third-card-bg-desktop@2x.png") 2x
-  );
-  background-image: image-set(
-    url("../img/third-card-bg-desktop.webp") type("image/webp") 1x,
-    url("../img/third-card-bg-desktop@2x.webp") type("image/webp") 2x,
-    url("../img/third-card-bg-desktop.png") 1x,
-    url("../img/third-card-bg-desktop@2x.png") 2x
-  );
+  background-image: -webkit-image-set(url("../img/third-card-bg-desktop.png") 1x,
+      url("../img/third-card-bg-desktop@2x.png") 2x);
+  background-image: image-set(url("../img/third-card-bg-desktop.webp") type("image/webp") 1x,
+      url("../img/third-card-bg-desktop@2x.webp") type("image/webp") 2x,
+      url("../img/third-card-bg-desktop.png") 1x,
+      url("../img/third-card-bg-desktop@2x.png") 2x);
   background-size: cover;
   background-color: $substrate;
 
   @media (max-width: $desktop-width) {
-    background-image: -webkit-image-set(
-      url("../img/third-card-bg-tablet.png") 1x,
-      url("../img/third-card-bg-tablet@2x.png") 2x
-    );
-    background-image: image-set(
-      url("../img/third-card-bg-tablet.webp") type("image/webp") 1x,
-      url("../img/third-card-bg-tablet@2x.webp") type("image/webp") 2x,
-      url("../img/third-card-bg-tablet.png") 1x,
-      url("../img/third-card-bg-tablet@2x.png") 2x
-    );
+    background-image: -webkit-image-set(url("../img/third-card-bg-tablet.png") 1x,
+        url("../img/third-card-bg-tablet@2x.png") 2x);
+    background-image: image-set(url("../img/third-card-bg-tablet.webp") type("image/webp") 1x,
+        url("../img/third-card-bg-tablet@2x.webp") type("image/webp") 2x,
+        url("../img/third-card-bg-tablet.png") 1x,
+        url("../img/third-card-bg-tablet@2x.png") 2x);
     background-size: cover;
   }
 
   @media (max-width: $tablet-width) {
-    background-image: -webkit-image-set(
-      url("../img/third-card-bg.png") 1x,
-      url("../img/third-card-bg@2x.png") 2x
-    );
-    background-image: image-set(
-      url("../img/third-card-bg.webp") type("image/webp") 1x,
-      url("../img/third-card-bg@2x.webp") type("image/webp") 2x,
-      url("../img/third-card-bg.png") 1x,
-      url("../img/third-card-bg@2x.png") 2x
-    );
+    background-image: -webkit-image-set(url("../img/third-card-bg.png") 1x,
+        url("../img/third-card-bg@2x.png") 2x);
+    background-image: image-set(url("../img/third-card-bg.webp") type("image/webp") 1x,
+        url("../img/third-card-bg@2x.webp") type("image/webp") 2x,
+        url("../img/third-card-bg.png") 1x,
+        url("../img/third-card-bg@2x.png") 2x);
     background-size: cover;
   }
 }
