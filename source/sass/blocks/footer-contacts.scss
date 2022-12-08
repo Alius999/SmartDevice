@@ -1,6 +1,11 @@
 .footer__contacts {
   grid-column: 3/4;
   grid-row: 1/7;
+
+  @media (max-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
 }
 
 .footer-contacts__header {

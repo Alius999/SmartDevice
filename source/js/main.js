@@ -243,6 +243,11 @@ if (window.matchMedia('(max-width: 1024px)').matches) {
   firstScreenButton.textContent = firstScreenButtonMobile;
 }
 
+if (window.matchMedia('(min-width: 768px)').matches) {
+  contactsList.classList.remove('footer-contacts__no-display');
+  footerList.classList.remove('footer-menu__no-display');
+}
+
 
 if (window.matchMedia('(min-width: 768px)').matches) {
   aboutButton.addEventListener('click', () => {

@@ -1,9 +1,15 @@
 .footer-menu {
   margin: 5px 0 0;
 
+  @media (max-width: $desktop-width) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
   @media (max-width: $tablet-width) {
     min-width: 320px;
     margin: 0;
+    grid-row: 3/4;
   }
 }
 
@@ -65,21 +71,29 @@
 .footer-menu__list {
   @include reset;
   list-style-type: none;
-  margin: 0 25px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  // margin: 0 25px 20px;
+  height: 160px;
+  width: 248px;
+  margin: 23px 0 0;
 
-  @media (min-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     height: 240px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-direction: column;
+    // flex-wrap: wrap;
     margin: 0;
     width: 220px;
   }
 
-  @media (min-width: $desktop-width) {
-    height: 160px;
-    width: 248px;
-    margin: 23px 0 0;
+  @media (max-width: $tablet-width) {
+    // height: 160px;
+    // width: 248px;
+    // margin: 23px 0 0;
+    height: auto;
+    margin: 0 25px 20px;
   }
 }
 

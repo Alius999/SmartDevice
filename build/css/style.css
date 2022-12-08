@@ -1523,7 +1523,18 @@ button,
   margin: 0;
   padding: 0;
   list-style-type: none;
-  margin: 0 25px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 160px;
+  width: 248px;
+  margin: 23px 0 0;
 }
 
 .footer-menu__link {
@@ -2311,31 +2322,6 @@ button,
   }
 */
 
-@media (min-width: 768px) {
-  .footer-menu__list {
-    height: 240px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin: 0;
-    width: 220px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .footer-menu__list {
-    height: 160px;
-    width: 248px;
-    margin: 23px 0 0;
-  }
-}
-
 @media (max-width: 1439px) {
   .container {
     padding: 0 32px;
@@ -2551,13 +2537,40 @@ button,
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
     padding: 0;
     -ms-grid-column-align: end;
     justify-self: end;
   }
 
+  .footer-menu {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+
   .footer-menu__header {
     padding: 20px 0;
+  }
+
+  .footer-menu__list {
+    height: 240px;
+    margin: 0;
+    width: 220px;
+  }
+
+  .footer__contacts {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
   }
 
   .footer-contacts__header {
@@ -2908,6 +2921,9 @@ button,
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
     -ms-grid-column-align: start;
     justify-self: start;
     margin: 20px 0 28px 50px;
@@ -2916,6 +2932,9 @@ button,
   .footer-menu {
     min-width: 320px;
     margin: 0;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
   }
 
   .footer-menu__header {
@@ -2944,6 +2963,11 @@ button,
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
+  }
+
+  .footer-menu__list {
+    height: auto;
+    margin: 0 25px 20px;
   }
 
   .footer-menu__link {
