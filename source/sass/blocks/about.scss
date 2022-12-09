@@ -135,7 +135,6 @@
   width: 180px;
   line-height: 17px;
   margin: 18px 0 0;
-
   background: $text-white;
   border-radius: 3px;
   border: 1px solid $main-blue;
@@ -146,6 +145,12 @@
   color: $main-blue;
   box-sizing: border-box;
   cursor: pointer;
+
+  &:hover,
+  &:focus-visible {
+    border: 1px solid $blue-focus-hover;
+    color: $blue-focus-hover;
+  }
 
   @media (max-width: $tablet-width) {
     min-height: 35px;

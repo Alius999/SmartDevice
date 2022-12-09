@@ -154,6 +154,11 @@
   text-transform: uppercase;
   color: $text-white;
 
+  &:hover,
+  &:focus-visible {
+    background: $blue-focus-hover;
+  }
+
   @media (max-width: $desktop-width) {
     margin-left: 45px;
   }

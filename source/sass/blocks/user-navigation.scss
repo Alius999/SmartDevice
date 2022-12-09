@@ -25,6 +25,11 @@
   }
 }
 
+.user-navigation__link:hover .user-navigation__icon,
+.user-navigation__link:focus-visible .user-navigation__icon {
+  opacity: 0.7;
+}
+
 .user-navigation__item-text {
   @include common-font-regular;
 

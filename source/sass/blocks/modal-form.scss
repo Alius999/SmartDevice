@@ -1,5 +1,5 @@
 .modal-window {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
@@ -61,6 +61,7 @@
   letter-spacing: 0;
   text-align: left;
   color: $text-white;
+  cursor: text;
 
   &::placeholder {
     @include common-font-regular;
@@ -89,6 +90,7 @@
   letter-spacing: 0;
   text-align: left;
   color: $text-white;
+  cursor: text;
 
   &::placeholder {
     @include common-font-regular;
@@ -114,6 +116,12 @@
   text-align: center;
   text-transform: uppercase;
   color: $text-white;
+  cursor: pointer;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.95;
+  }
 }
 
 .modal-window__agreement-container {
@@ -124,8 +132,8 @@
   margin: 20px 0 0;
 }
 
-.modal-window__agreement-container input {
-  visibility: hidden;
+.modal-window__agreement-container input:focus-visible ~ label {
+    opacity: 0.7;
 }
 
 .modal-window__agreement-container label {
@@ -138,6 +146,12 @@
   color: $text-white;
   margin: 0 0 0 16px;
   align-self: center;
+  cursor: pointer;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.8;
+  }
 }
 
 .modal-window__agreement-container label::before {

@@ -39,3 +39,10 @@
   border-radius: 15px;
   background: $text-white;
 }
+
+.socials__link {
+  &:hover,
+  &:focus-visible {
+    opacity: 0.7;
+  }
+}
