@@ -15,6 +15,7 @@
 
 .footer-menu__header {
   @include header-font-regular;
+
   font-size: 15px;
   line-height: 16px;
   letter-spacing: 0.05em;
@@ -23,9 +24,11 @@
   color: $text-white;
   display: block;
   padding: 0;
+  margin: 3px 0 0;
 
   @media (max-width: $desktop-width) {
     padding: 20px 0;
+    margin: 0;
   }
 
   @media (max-width: $tablet-width) {

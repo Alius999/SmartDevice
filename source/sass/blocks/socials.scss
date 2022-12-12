@@ -1,5 +1,5 @@
 .socials {
-  padding: 0 92px;
+  // padding: 0 92px;
   grid-column: 1/2;
   grid-row: 2/3;
   justify-self: start;
@@ -14,11 +14,11 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 0;
+    padding: 0 0 0 42px;
     grid-column: 1/2;
     grid-row: 2/3;
     justify-self: start;
-    margin: 20px 0 28px 50px;
+    margin: 20px 0 30px 50px;
   }
 }
 

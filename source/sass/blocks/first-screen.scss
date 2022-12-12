@@ -9,6 +9,7 @@
   background-color: $substrate;
 
   @media (max-width: $desktop-width) {
+    min-height: auto;
     margin-top: -100px;
     padding: 180px 50px 205px;
     background-size: cover;
@@ -84,9 +85,13 @@
 }
 
 .first-screen__container {
-  margin-left: -255px;
+  margin-left: -245px;
 
   @media (max-width: $desktop-width) {
+    margin: 0 0 0 -18px;
+  }
+
+  @media (max-width: $tablet-width) {
     margin: 0;
   }
 }
@@ -125,11 +130,12 @@
   width: 650px;
 
   @media (max-width: $desktop-width) {
-    display: contents;
+    display: block;
     margin: 0 0 57px;
   }
 
   @media (max-width: $tablet-width) {
+    width: 100%;
     margin: 8px 0 45px;
     font-size: 14px;
     line-height: 22px;

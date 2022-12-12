@@ -23,7 +23,7 @@
   letter-spacing: 0;
   text-align: left;
   color: $text-white;
-  margin: 0 0 10px -5px;
+  margin: 0 0 14px -5px;
   grid-column: 1/3;
 
   @media (max-width: $desktop-width) {
@@ -46,7 +46,7 @@
   letter-spacing: 0;
   text-align: left;
   color: $text-white;
-  margin: 0 0 35px;
+  margin: 0 0 33px;
   grid-column: 1/3;
 
   @media (max-width: $desktop-width) {
@@ -54,7 +54,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin: 0 0 35px;
+    margin: 0 0 32px;
     font-size: 14px;
     line-height: 19px;
     grid-column: 1/2;
@@ -66,6 +66,7 @@
 
   display: block;
   height: 50px;
+  width: 100%;
   max-width: 275px;
   border-radius: 3px;
   background: rgba(4, 20, 39, 0.15);
@@ -90,11 +91,11 @@
   }
 
   @media (max-width: $desktop-width) {
-    width: 320px;
+    min-width: 319px;
   }
 
   @media (max-width: $tablet-width) {
-    width: 100%;
+    min-width: 270px;
     max-width: 100%;
   }
 }
@@ -115,14 +116,14 @@
 .feedback-form textarea {
   @include common-font-regular;
 
-  height: 180px;
+  height: 155px;
   width: 100%;
   border-radius: 3px;
   background: rgba(4, 20, 39, 0.15);
   border: 0;
   outline: none;
   box-sizing: border-box;
-  margin-bottom: 23px;
+  margin-bottom: 35px;
   padding: 25px 12px;
   font-size: 16px;
   line-height: 22px;
@@ -142,13 +143,17 @@
 
   @media (max-width: $desktop-width) {
     height: 155px;
+    min-width: 668px;
     margin-bottom: 35px;
     padding: 30px 15px;
   }
 
   @media (max-width: $tablet-width) {
-    padding: 20px 12px;
-    width: 100%;
+    height: 180px;
+    margin-bottom: 30px;
+    padding: 24px 15px;
+    min-width: 100%;
+    // width: 100%;
     grid-column: 1/2;
   }
 }
@@ -188,7 +193,7 @@
   grid-column: 2/3;
 
   @media (max-width: $desktop-width) {
-    margin: 0;
+    margin: 9px 0 0;
     padding-left: 16px;
   }
 
@@ -219,8 +224,12 @@
     opacity: 0.8;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     margin: 0 0 0 26px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin: 0 0 0 10px;
   }
 }
 

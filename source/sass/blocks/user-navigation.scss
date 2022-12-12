@@ -8,6 +8,7 @@
   list-style-type: none;
 
   @media (max-width: $desktop-width) {
+    grid-template-columns: 1.3fr 1fr;
     margin-bottom: 14px;
   }
 
