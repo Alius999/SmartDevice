@@ -19,6 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
+
   });
 });
 
@@ -75,22 +76,22 @@ const goodsHeaderMobile = goodsHeader.dataset.mobileText;
 const firstScreenButton = document.querySelector('.first-screen__container-button');
 const firstScreenButtonMobile = firstScreenButton.dataset.firstScreenButtonMobile;
 
-// WebP Detecting
+// // WebP Detecting
 
-function checkWebP(callback) {
-  let webP = new Image();
-  webP.onload = webP.onerror = function () {
-    callback(webP.height === 2);
-  };
-  webP.src = 'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
-}
-checkWebP(function (support) {
-  if (support) {
-    document.body.classList.add('webp');
-  } else {
-    document.body.classList.add('no-webp');
-  }
-});
+// function checkWebP(callback) {
+//   let webP = new Image();
+//   webP.onload = webP.onerror = function () {
+//     callback(webP.height === 2);
+//   };
+//   webP.src = 'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
+// }
+// checkWebP(function (support) {
+//   if (support) {
+//     document.body.classList.add('webp');
+//   } else {
+//     document.body.classList.add('no-webp');
+//   }
+// });
 
 // Без JS
 
