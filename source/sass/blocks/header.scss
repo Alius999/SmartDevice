@@ -21,16 +21,16 @@
 
 .header__container {
   display: grid;
-  grid-template-columns: 55px 1.01fr 1.65fr 1fr;
+  grid-template-columns: 55px 1fr 1.65fr 1fr;
   max-width: 1220px;
   margin: 0 auto;
 
   @media (max-width: $desktop-width) {
-    grid-template-columns: 55px 4fr 100px;
+    grid-template-columns: 55px 4fr 102px;
   }
 
   @media (max-width: $tablet-width) {
-    grid-template-columns: 3fr 1.8fr;
+    grid-template-columns: 3fr 100px;
   }
 }
 
@@ -41,12 +41,12 @@
   }
 }
 
-.header__logo-link {
-  &:hover,
-  &:focus-visible {
-    opacity: 0.7;
-  }
-}
+// .header__logo-link {
+//   &:hover,
+//   &:focus-visible {
+//     opacity: 0.7;
+//   }
+// }
 
 .header__slogan {
   margin: 5px 0 0 15px;
@@ -84,8 +84,9 @@
 
   display: grid;
   align-items: center;
-  width: 160px;
-  height: 40px;
+  min-width: 160px;
+  max-width: 220px;
+  min-height: 40px;
   border-radius: 3px;
   border: 1px solid #f2f5f6;
   background: transparent;

@@ -63,6 +63,7 @@
     "node": ">=16.15.1"
   },
   "dependencies": {
+    "imask": "^6.4.3",
     "inputmask": "^5.0.7",
     "just-validate": "^3.8.1"
   }

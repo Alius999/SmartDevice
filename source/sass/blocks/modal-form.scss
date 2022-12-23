@@ -3,22 +3,24 @@
   width: 100%;
   height: 100%;
   top: 0;
+  right: 7px;
   display: none;
   background: rgba(3, 16, 27, 0.7);
+  overflow: scroll;
 }
 
 .modal-window__wrapper {
   width: 500px;
   min-height: 610px;
   background: $main-blue;
-  padding: 40px;
+  padding: 38px;
   position: absolute;
   top: 146px;
   left: 50%;
   transform: translate(-50%, 0);
 }
 
-.modal-window__wrapper span {
+.modal-window__wrapper h3 {
   @include header-font-regular;
 
   display: block;
@@ -27,7 +29,7 @@
   letter-spacing: 0;
   text-align: left;
   color: $text-white;
-  margin: 0 0 15px;
+  margin: 0 0 3px;
 }
 
 .modal-window__wrapper p {
@@ -55,7 +57,7 @@
   outline: none;
   margin-bottom: 20px;
   box-sizing: border-box;
-  padding: 15px 13px;
+  padding: 15px;
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 0;
@@ -71,6 +73,15 @@
     text-align: left;
     color: $text-white;
   }
+
+  &:hover {
+    box-shadow: grey 0px 0px 1px 2px;
+  }
+
+  &:active,
+  &:focus {
+    outline: 1px solid rgb(40, 85, 154);
+  }
 }
 
 .modal-window__wrapper textarea {
@@ -83,8 +94,8 @@
   border: 0;
   outline: none;
   box-sizing: border-box;
-  margin-bottom: 25px;
-  padding: 25px 15px;
+  margin-bottom: 16px;
+  padding: 21px 17px;
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 0;
@@ -99,6 +110,26 @@
     letter-spacing: 0;
     text-align: left;
     color: $text-white;
+  }
+
+  &:hover {
+    box-shadow: grey 0px 0px 1px 2px;
+  }
+
+  &:active,
+  &:focus {
+    outline: 1px solid rgb(40, 85, 154);
+  }
+}
+
+
+.modal-window button:first-of-type {
+  width: 30px;
+  height: 30px;
+  &:hover,
+  &:focus-visible {
+    opacity: 0.7;
+    outline: 1px solid rgb(40, 85, 154);
   }
 }
 
@@ -127,13 +158,19 @@
 .modal-window__agreement-container {
   display: flex;
   flex-direction: row-reverse;
+  flex-wrap: wrap;
   justify-content: center;
   position: relative;
-  margin: 20px 0 0;
+  margin: 20px 0 0 5px;
 }
 
 .modal-window__agreement-container input:focus-visible ~ label {
-    opacity: 0.7;
+  opacity: 0.7;
+  border: 10px solid rgb(40, 85, 154);
+}
+
+.modal-window__agreement-container input:focus-visible ~ label::before {
+  border: 1px solid rgb(40, 85, 154);
 }
 
 .modal-window__agreement-container label {
@@ -144,14 +181,22 @@
   letter-spacing: 0;
   text-align: left;
   color: $text-white;
-  margin: 0 0 0 16px;
+  margin: 0 0 0 8px;
   align-self: center;
   cursor: pointer;
 
   &:hover,
   &:focus-visible {
     opacity: 0.8;
+    // border: 5px solid rgb(40, 85, 154);
+    outline: 1px solid rgb(40, 85, 154);
   }
+}
+
+.modal-window__agreement-container label:focus::before {
+  opacity: 0.8;
+  // border: 5px solid rgb(40, 85, 154);
+  outline: 1px solid rgb(40, 85, 154);
 }
 
 .modal-window__agreement-container label::before {
@@ -160,7 +205,7 @@
   position: absolute;
   box-sizing: border-box;
   border-radius: 3px;
-  top: 50%;
+  top: 8px;
   left: 6px;
   transform: translate(0, -50%);
   background: transparent;
@@ -187,8 +232,8 @@
 .modal-window__close {
   display: block;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 19px;
+  right: 23px;
   z-index: 1;
   cursor: pointer;
   outline: none;
@@ -200,12 +245,12 @@
   content: "";
   display: block;
   position: absolute;
-  width: 20px;
+  width: 28px;
   height: 2px;
   transform: rotate(135deg);
   background: $text-white;
-  top: 40px;
-  right: 40px;
+  // top: 40px;
+  right: 1px;
   z-index: 1;
   cursor: pointer;
 }
@@ -214,12 +259,12 @@
   content: "";
   display: block;
   position: absolute;
-  width: 20px;
+  width: 28px;
   height: 2px;
   transform: rotate(45deg);
   background: $text-white;
-  top: 40px;
-  right: 40px;
+  // top: 40px;
+  right: 1px;
   z-index: 1;
   cursor: pointer;
 }

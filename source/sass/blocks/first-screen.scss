@@ -27,10 +27,13 @@
 .webp .first-screen {
   background-image: url("../img/webp/first-screen-bg-desktop.webp");
   background-size: cover;
+  background-color: $substrate;
 
-  @media (min-resolution: 2dppx) {
-    background: url("../img/webp/first-screen-bg-desktop@2x.webp") no-repeat;
-    background-size: cover;
+  @media (min-width: $desktop-width) {
+    @media (min-resolution: 2dppx) {
+      background: url("../img/webp/first-screen-bg-desktop@2x.webp") no-repeat;
+      background-size: cover;
+    }
   }
 
   @media (max-width: $desktop-width) {
@@ -57,10 +60,13 @@
 .nowebp .first-screen {
   background-image: url("../img/first-screen-bg-desktop.png");
   background-size: cover;
+  background-color: $substrate;
 
-  @media (min-resolution: 2dppx) {
-    background: url("../img/first-screen-bg-desktop@2x.png") no-repeat;
-    background-size: cover;
+  @media (min-width: $desktop-width) {
+    @media (min-resolution: 2dppx) {
+      background: url("../img/first-screen-bg-desktop@2x.png") no-repeat;
+      background-size: cover;
+    }
   }
 
   @media (max-width: $desktop-width) {
@@ -85,20 +91,27 @@
 }
 
 .first-screen__container {
-  margin-left: -245px;
+  min-width: 984px;
+  max-width: 1220px;
+  margin-left: 22px;
 
   @media (max-width: $desktop-width) {
-    margin: 0 0 0 -18px;
+    min-width: 668px;
+    max-width: 768px;
+    word-wrap: break-word;
+    margin: 0;
   }
 
   @media (max-width: $tablet-width) {
     margin: 0;
+    min-width: 270px;
+    max-width: 320px;
   }
 }
 
 .first-screen__container h2 {
   @include header-font-bold;
-  margin: 0;
+  margin: 0 0 0 -5px;
   display: block;
   font-size: 80px;
   line-height: 94px;
@@ -110,6 +123,7 @@
   @media (max-width: $desktop-width) {
     font-size: 64px;
     line-height: 75px;
+    margin: 0;
   }
 
   @media (max-width: $tablet-width) {
@@ -121,6 +135,7 @@
 .first-screen__container p {
   @include common-font-regular;
 
+  margin: 32px 0 45px -5px;
   font-size: 22px;
   line-height: 34px;
   letter-spacing: 0;
@@ -159,6 +174,8 @@
   text-align: center;
   text-transform: uppercase;
   color: $text-white;
+  margin-left: -5px;
+  padding: 8px;
 
   &:hover,
   &:focus-visible {
@@ -175,5 +192,6 @@
     width: 270px;
     font-size: 14px;
     line-height: 16px;
+    padding: 5px;
   }
 }

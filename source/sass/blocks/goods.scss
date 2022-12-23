@@ -51,7 +51,7 @@
   @media (max-width: $desktop-width) {
     min-width: 668px;
     max-width: 768px;
-    margin-bottom: 0;
+    margin: 0;
   }
 
   @media (max-width: $tablet-width) {
@@ -119,10 +119,13 @@
 .webp .goods__item--first {
   background-image: url("../img/webp/first-card-bg-desktop.webp");
   background-size: cover;
+  background-color: $substrate;
 
-  @media (min-resolution: 2dppx) {
-    background: url("../img/webp/first-card-bg-desktop@2x.webp") no-repeat;
-    background-size: cover;
+  @media (min-width: $desktop-width) {
+    @media (min-resolution: 2dppx) {
+      background: url("../img/webp/first-card-bg-desktop@2x.webp") no-repeat;
+      background-size: cover;
+    }
   }
 
   @media (max-width: $desktop-width) {
@@ -149,10 +152,13 @@
 .nowebp .goods__item--first {
   background-image: url("../img/first-card-bg-desktop.png");
   background-size: cover;
+  background-color: $substrate;
 
-  @media (min-resolution: 2dppx) {
-    background: url("../img/first-card-bg-desktop@2x.png") no-repeat;
-    background-size: cover;
+  @media (min-width: $desktop-width) {
+    @media (min-resolution: 2dppx) {
+      background: url("../img/first-card-bg-desktop@2x.png") no-repeat;
+      background-size: cover;
+    }
   }
 
   @media (max-width: $desktop-width) {
@@ -179,11 +185,13 @@
 .webp .goods__item--second {
   background-image: url("../img/webp/second-card-bg-desktop.webp");
   background-size: cover;
+  background-color: $substrate;
 
-
-  @media (min-resolution: 2dppx) {
-    background: url("../img/webp/second-card-bg-desktop@2x.webp") no-repeat;
-    background-size: cover;
+  @media (min-width: $desktop-width) {
+    @media (min-resolution: 2dppx) {
+      background: url("../img/webp/second-card-bg-desktop@2x.webp") no-repeat;
+      background-size: cover;
+    }
   }
 
   @media (max-width: $desktop-width) {
@@ -210,10 +218,13 @@
 .nowebp .goods__item--second {
   background-image: url("../img/second-card-bg-desktop.png");
   background-size: cover;
+  background-color: $substrate;
 
-  @media (min-resolution: 2dppx) {
-    background: url("../img/second-card-bg-desktop@2x.png") no-repeat;
-    background-size: cover;
+  @media (min-width: $desktop-width) {
+    @media (min-resolution: 2dppx) {
+      background: url("../img/second-card-bg-desktop@2x.png") no-repeat;
+      background-size: cover;
+    }
   }
 
   @media (max-width: $desktop-width) {
@@ -240,10 +251,13 @@
 .webp .goods__item--third {
   background-image: url("../img/webp/third-card-bg-desktop.webp");
   background-size: cover;
+  background-color: $substrate;
 
-  @media (min-resolution: 2dppx) {
-    background: url("../img/webp/third-card-bg-desktop@2x.webp") no-repeat;
-    background-size: cover;
+  @media (min-width: $desktop-width) {
+    @media (min-resolution: 2dppx) {
+      background: url("../img/webp/third-card-bg-desktop@2x.webp") no-repeat;
+      background-size: cover;
+    }
   }
 
   @media (max-width: $desktop-width) {
@@ -270,10 +284,13 @@
 .nowebp .goods__item--third {
   background-image: url("../img/third-card-bg-desktop.png");
   background-size: cover;
+  background-color: $substrate;
 
-  @media (min-resolution: 2dppx) {
-    background: url("../img/third-card-bg-desktop@2x.png") no-repeat;
-    background-size: cover;
+  @media (min-width: $desktop-width) {
+    @media (min-resolution: 2dppx) {
+      background: url("../img/third-card-bg-desktop@2x.png") no-repeat;
+      background-size: cover;
+    }
   }
 
   @media (max-width: $desktop-width) {

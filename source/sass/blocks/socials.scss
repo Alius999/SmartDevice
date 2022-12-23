@@ -3,7 +3,7 @@
   grid-column: 1/2;
   grid-row: 2/3;
   justify-self: start;
-  margin: 50px 0 0 15px;
+  margin: 12px 0 0 15px;
 
   @media (max-width: $desktop-width) {
     margin: 10px -2px 28px 0;
@@ -14,20 +14,22 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 0 0 0 42px;
+    // padding: 0 0 0 42px;
     grid-column: 1/2;
     grid-row: 2/3;
-    justify-self: start;
-    margin: 20px 0 30px 50px;
+    justify-self: center;
+    margin: 16px 0 30px;
   }
 }
 
 .socials__list {
   @include reset;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   list-style-type: none;
-  width: 140px;
+  min-width: 140px;
+  max-width: 180px;
 }
 
 .socials__link--pinterest {

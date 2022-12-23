@@ -57,16 +57,20 @@
   min-height: 300px;
   border: 1px solid #ebebeb;
 
-  &:hover {
+  &:hover,
+  &:active {
     background: $main-blue;
   }
 
   &:hover h3,
-  &:hover p {
+  &:active h3,
+  &:hover p,
+  &:active p {
     color: $text-white;
   }
 
-  &:hover .features__item-image {
+  &:hover .features__item-image,
+  &:active .features__item-image {
     fill: $text-white;
   }
 

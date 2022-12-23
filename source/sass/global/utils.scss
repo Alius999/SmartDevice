@@ -65,3 +65,14 @@
   /* stylelint-disable-next-line */
   transition: none !important;
 }
+
+body {
+  height: 100vh;
+  position: relative;
+  // display: flex;
+  // flex-direction: column;
+}
+
+// main {
+//   height: 100%;
+// }
