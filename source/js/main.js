@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import Inputmask from './inputmask';
+// import Inputmask from './inputmask';
 import JustValidate from './just-validate.es';
 import IMask from './imask';
 
@@ -98,16 +98,6 @@ contactsList.classList.remove('footer-contacts__list--no-js');
 
 // Маска телефона
 
-// let selector = document.querySelector('.feedback-form__phone');
-// let im = new Inputmask('+7 (999) 999-99-99');
-
-// im.mask(selector);
-
-// var phoneMask = IMask(
-//   document.getElementById('feedback-form__phone'), {
-//     mask: '+{7}(000)000-00-00'
-//   });
-
 var element = document.querySelector('.feedback-form__phone');
 var maskOptions = {
   mask: '+{7}(000)000-00-00',
@@ -118,12 +108,12 @@ var mask = IMask(element, maskOptions);
 
 // Маска телефона для модального окна
 
-let selectorModal = document.querySelector('.modal-window__phone');
-let imModal = new Inputmask('+7 (999) 999-99-99');
-
-imModal.mask(selectorModal);
-
-// Валидация формы
+var element = document.querySelector('.modal-window__phone');
+var maskOptions = {
+  mask: '+{7}(000)000-00-00',
+  minLength: 5,
+};
+var mask = IMask(element, maskOptions);
 
 const validation = new JustValidate('#feedback-form', {
   errorFieldCssClass: 'is-invalid',
@@ -172,49 +162,49 @@ validation
 
 // // Валидация модального окна
 
-// const validationModal = new JustValidate('#modal-window');
+const validationModal = new JustValidate('#modal-window');
 
-// validationModal
-//     .addField('#modal-window__name', [
-//       {
-//         rule: 'minLength',
-//         value: 3,
-//         errorMessage: 'В имени должно быть больше трёх букв',
-//       },
-//       {
-//         rule: 'maxLength',
-//         value: 30,
-//       },
-//       {
-//         rule: 'required',
-//         errorMessage: 'Укажите Ваше имя',
-//       }
-//     ])
-//     .addField('#modal-agreement', [
-//       {
-//         rule: 'required',
-//         errorMessage: 'Вы должны согласиться с правилами',
-//       }
-//     ])
-//     .addField('#modal-window__phone', [
-//       {
-//         rule: 'required',
-//         errorMessage: 'Укажите Ваш телефон',
-//       },
-//       {
-//         rule: 'minLength',
-//         value: 16,
-//         errorMessage: 'Неверный формат',
-//       },
-//       {
-//         rule: 'maxLength',
-//         value: 18,
-//       }
-//     ])
+validationModal
+    .addField('#modal-window__name', [
+      {
+        rule: 'minLength',
+        value: 3,
+        errorMessage: 'В имени должно быть больше трёх букв',
+      },
+      {
+        rule: 'maxLength',
+        value: 30,
+      },
+      {
+        rule: 'required',
+        errorMessage: 'Укажите Ваше имя',
+      }
+    ])
+    .addField('#modal-agreement', [
+      {
+        rule: 'required',
+        errorMessage: 'Вы должны согласиться с правилами',
+      }
+    ])
+    .addField('#modal-window__phone', [
+      {
+        rule: 'required',
+        errorMessage: 'Укажите Ваш телефон',
+      },
+      {
+        rule: 'minLength',
+        value: 16,
+        errorMessage: 'Неверный формат',
+      },
+      {
+        rule: 'maxLength',
+        value: 18,
+      }
+    ])
 
-// .onSuccess((event) => {
-//   document.getElementById("modal-window").submit();
-// });
+.onSuccess((event) => {
+  document.getElementById("modal-window").submit();
+});
 
 // Фиксация header в desktop
 
@@ -316,39 +306,9 @@ window.addEventListener('resize', function(event) {
     textAfterDividerMobile.style.display = 'none';
   }
 
-  // if (window.matchMedia('(max-width: 767px)').matches) {
-  //   aboutButton.addEventListener('click', () => {
-  //     aboutText.classList.toggle('about__click');
-  //     if (aboutText.classList.contains('about__click')) {
-  //       textAfterDivider.style.display = 'inline';
-  //       textAfterDividerMobile.style.display = 'inline';
-  //       aboutButton.textContent = 'Свернуть';
-  //     } else if (!aboutText.classList.contains('about__click')) {
-  //       textAfterDivider.style.display = 'none';
-  //       textAfterDividerMobile.style.display = 'none';
-  //       aboutButton.textContent = 'Подробнее';
-  //     }
-  //   });
-  // }
-
   if (window.matchMedia('(min-width: 768px)').matches) {
     textAfterDividerMobile.style.display = 'inline';
   }
-
-
-  // if (window.matchMedia('(min-width: 768px)').matches) {
-  //   aboutButton.addEventListener('click', () => {
-  //     aboutText.classList.toggle('about__click');
-  //     if (aboutText.classList.contains('about__click')) {
-  //       textAfterDivider.style.display = 'none';
-  //       aboutButton.textContent = 'Свернуть';
-  //     } else if (!aboutText.classList.contains('about__click')) {
-  //       textAfterDivider.style.display = 'inline';
-  //       // textAfterDividerMobile.style.display = 'inline';
-  //       aboutButton.textContent = 'Подробнее';
-  //     }
-  //   });
-  // }
 
 
   if (window.matchMedia('(min-width: 768px)').matches) {
