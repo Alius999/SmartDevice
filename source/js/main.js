@@ -172,49 +172,49 @@ validation
 
 // // Валидация модального окна
 
-const validationModal = new JustValidate('#modal-window');
+// const validationModal = new JustValidate('#modal-window');
 
-validationModal
-    .addField('#modal-window__name', [
-      {
-        rule: 'minLength',
-        value: 3,
-        errorMessage: 'В имени должно быть больше трёх букв',
-      },
-      {
-        rule: 'maxLength',
-        value: 30,
-      },
-      {
-        rule: 'required',
-        errorMessage: 'Укажите Ваше имя',
-      }
-    ])
-    .addField('#modal-agreement', [
-      {
-        rule: 'required',
-        errorMessage: 'Вы должны согласиться с правилами',
-      }
-    ])
-    .addField('#modal-window__phone', [
-      {
-        rule: 'required',
-        errorMessage: 'Укажите Ваш телефон',
-      },
-      {
-        rule: 'minLength',
-        value: 16,
-        errorMessage: 'Неверный формат',
-      },
-      {
-        rule: 'maxLength',
-        value: 18,
-      }
-    ])
+// validationModal
+//     .addField('#modal-window__name', [
+//       {
+//         rule: 'minLength',
+//         value: 3,
+//         errorMessage: 'В имени должно быть больше трёх букв',
+//       },
+//       {
+//         rule: 'maxLength',
+//         value: 30,
+//       },
+//       {
+//         rule: 'required',
+//         errorMessage: 'Укажите Ваше имя',
+//       }
+//     ])
+//     .addField('#modal-agreement', [
+//       {
+//         rule: 'required',
+//         errorMessage: 'Вы должны согласиться с правилами',
+//       }
+//     ])
+//     .addField('#modal-window__phone', [
+//       {
+//         rule: 'required',
+//         errorMessage: 'Укажите Ваш телефон',
+//       },
+//       {
+//         rule: 'minLength',
+//         value: 16,
+//         errorMessage: 'Неверный формат',
+//       },
+//       {
+//         rule: 'maxLength',
+//         value: 18,
+//       }
+//     ])
 
-.onSuccess((event) => {
-  document.getElementById("modal-window").submit();
-});
+// .onSuccess((event) => {
+//   document.getElementById("modal-window").submit();
+// });
 
 // Фиксация header в desktop
 
