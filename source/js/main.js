@@ -162,7 +162,7 @@ validation
 
 // // Валидация модального окна
 
-const validationModal = new JustValidate('#modal-window');
+const validationModal = new JustValidate('#modal-window__wrapper');
 
 validationModal
     .addField('#modal-window__name', [
@@ -203,7 +203,7 @@ validationModal
     ])
 
 .onSuccess((event) => {
-  document.getElementById("modal-window").submit();
+  document.getElementById("modal-window__wrapper").submit();
 });
 
 // Фиксация header в desktop
