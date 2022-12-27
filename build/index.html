@@ -50,22 +50,29 @@
       <header class="header">
           <div class="header__container">
             <!-- <a href="index.html" class="header__logo-link"> -->
-              <img loading="lazy" src="img/svg/logo.svg" alt="Smart Device" width="55" height="55" class="header__logo">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
+              <img loading="lazy" src="img/svg/logo.svg" alt="Smart Device" width="215" height="55" class="header__logo">
+            </picture>
             <!-- </a> -->
-            <div class="header__slogan">
+            <!-- <div class="header__slogan">
               <p class="header__slogan-name">Smart Device</p>
               <p class="header__slogan-text">умные технологии</p>
-            </div>
+            </div> -->
             <ul class="user-navigation">
               <li class="user-navigation__item">
-                <a class="user-navigation__link" href="mailto:info@sd.ru">info@sd.ru</a>
-                <img loading="lazy" src="img/svg/email.svg" alt="Написать" width="20" height="20" class="user-navigation__icon">
-                  <!-- <span class="user-navigation__item-text"></span> -->
+                <a class="user-navigation__link" href="mailto:info@sd.ru">
+                <!-- <a href="#" class="user-navigation__link-image"> -->
+                  <img loading="lazy" src="img/svg/email.svg" alt="Написать" width="20" height="20" class="user-navigation__icon">
+                <!-- </a> -->
+                  <span class="user-navigation__item-text">info@sd.ru</span></a>
               </li>
               <li class="user-navigation__item">
-                <a class="user-navigation__link" href="tel:+7495005252">+7 (495) 000 52 52</a>
+                <a class="user-navigation__link" href="tel:+74950005252">
+                <!-- <a href="#" class="user-navigation__link-image"> -->
                   <img loading="lazy" src="img/svg/phone.svg" alt="Позвонить" width="20" height="20" class="user-navigation__icon">
-                  <!-- <span class="user-navigation__item-text"></span> -->
+                <!-- </a> -->
+                  <span class="user-navigation__item-text">+7 (495) 000 52 52</span></a>
                 <!-- </a> -->
               </li>
             </ul>
@@ -164,17 +171,17 @@
               <p class="feedback-form__secondary-header">Мы проконсультируем Вас&nbsp;бесплатно</p>
               <label for="feedback-form__name" class="visually-hidden">Имя</label>
               <div class="feedback-form__input-wrapper">
-                <input class="feedback-form__input feedback-form__name" id="feedback-form__name" type="text" placeholder="Имя">
+                <input class="feedback-form__input feedback-form__name" name="feedback-form__name" id="feedback-form__name" type="text" placeholder="Имя" required>
               </div>
               <label for="feedback-form__phone" class="visually-hidden">Телефон</label>
               <div class="feedback-form__input-wrapper">
-                <input class="feedback-form__input feedback-form__phone" id="feedback-form__phone" minlength="18" type="tel" placeholder="Телефон">
+                <input class="feedback-form__input feedback-form__phone" name="feedback-form__phone" id="feedback-form__phone" minlength="18" type="tel" placeholder="Телефон" required>
               </div>
               <label for="feedback-form__textarea" class="visually-hidden">Ваш вопрос</label>
               <textarea class="feedback-form__question" name="feedback-form__textarea" id="feedback-form__textarea" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
               <button class="feedback-form__button">Задать вопрос</button>
               <div class="feedback-form__agreement-wrapper">
-                  <input class="feedback-form__checkbox visually-hidden" id="agreement" type="checkbox" checked>
+                  <input class="feedback-form__checkbox visually-hidden" name="agreement" id="agreement" type="checkbox" checked required>
                   <label for="agreement" class="feedback-form__label">Я согласен на&nbsp;обработку  персональных данных</label>
               </div>
             </form>
@@ -182,13 +189,13 @@
         </section>
       </main>
     </div>
-    <footer class="footer">
+    <footer class="footer footer__no-js">
       <h2 class="visually-hidden">Информация о компании</h2>
       <div class="footer__container">
         <div class="footer-logo">
-          <img loading="lazy" src="img/svg/logo.svg" alt="Smart Device" width="55" height="55" class="footer-logo__img">
-          <p class="footer-logo__logo-name">Smart Device</p>
-          <p class="footer-logo__logo-text">умные технологии</p>
+          <img loading="lazy" src="img/svg/logo.svg" alt="Smart Device" width="215" height="55" class="footer-logo__img">
+          <!-- <p class="footer-logo__logo-name">Smart Device</p>
+          <p class="footer-logo__logo-text">умные технологии</p> -->
         </div>
         <section class="socials">
           <h2 class="visually-hidden">Социальные сети компании Smart Device</h2>
@@ -240,9 +247,9 @@
           </div>
           <ul class="footer-contacts__list footer-contacts__no-display footer-contacts__list--no-js">
             <li class="footer-contacts__item"><a href="#" class="footer-contacts__link"> г. Мытищи, Олимпийский проспект, д.10</a></li>
-            <li class="footer-contacts__item"><a href="#" class="footer-contacts__link">+7 (495) 589-40-50</a></li>
-            <li class="footer-contacts__item"><a href="#" class="footer-contacts__link">+7 (925) 389-58-29</a></li>
-            <li class="footer-contacts__item"><a href="#" class="footer-contacts__link">+7 (925) 364-78-13</a></li>
+            <li class="footer-contacts__item"><a href="tel:+74955894050" class="footer-contacts__link">+7 (495) 589-40-50</a></li>
+            <li class="footer-contacts__item"><a href="tel:+74953895829" class="footer-contacts__link">+7 (925) 389-58-29</a></li>
+            <li class="footer-contacts__item"><a href="tel:+74953647813" class="footer-contacts__link">+7 (925) 364-78-13</a></li>
           </ul>
         </div>
       </div>
@@ -272,6 +279,6 @@
     <!-- <script src="js/imask.js" async></script> -->
 
     <script src="js/main.min.js"></script>
-    <script src="js/webp-detect.js" async></script>
+    <script src="js/webp-detect.js"></script>
   </body>
 </html>

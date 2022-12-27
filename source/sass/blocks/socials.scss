@@ -32,6 +32,16 @@
   max-width: 180px;
 }
 
+.socials__item {
+  margin-right: 5px;
+}
+
+.socials__item:last-of-type {
+  @media (max-width: $tablet-width) {
+    margin-right: 0;
+  }
+}
+
 .socials__link--pinterest {
   display: grid;
   align-items: center;

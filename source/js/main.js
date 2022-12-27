@@ -133,12 +133,18 @@ validation
       {
         rule: 'required',
         errorMessage: 'Укажите Ваше имя',
+      },
+      {
+        rule: 'required',
       }
     ])
     .addField('#agreement', [
       {
         rule: 'required',
         errorMessage: 'Вы должны согласиться с правилами',
+      },
+      {
+        rule: 'required',
       }
     ])
     .addField('#feedback-form__phone', [
@@ -154,11 +160,15 @@ validation
       {
         rule: 'maxLength',
         value: 18,
+      },
+      {
+        rule: 'required',
       }
     ])
     .onSuccess((event) => {
       document.getElementById("feedback-form").submit();
-  });
+      // console.log('Hello!')
+    });
 
 // // Валидация модального окна
 

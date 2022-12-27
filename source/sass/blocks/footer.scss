@@ -1,6 +1,6 @@
 .footer {
   position: absolute;
-  // bottom: 0;
+  // bottom: -100px;
   padding: 50px 20px 40px;
   background: $text-color;
   align-content: start;
@@ -15,6 +15,21 @@
   @media (max-width: $tablet-width) {
     min-width: 320px;
     padding: 35px 0;
+  }
+}
+
+.footer__no-js {
+  // bottom: -282px;
+  bottom: 0;
+  transform: translate(0, 100%);
+
+  @media (max-width: $desktop-width) {
+    // bottom: -481px;
+    transform: translate(0, 100%);
+  }
+
+  @media (max-width: $tablet-width) {
+    transform: translate(0, 100%);
   }
 }
 
